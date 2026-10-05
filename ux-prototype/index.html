@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Яндекс Карты — Тест 1</title>
+  <link rel="preload" href="public/assets/figma/ys-text-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="public/assets/figma/ys-text-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=discovery-motion-1">
+</head>
+<body>
+  <main class="prototype-shell">
+    <nav class="test-switcher" aria-label="Переключение прототипов">
+      <button id="reset-test" data-test="1" class="test-switcher__item is-active" type="button" aria-current="page">Тест 1</button>
+      <button data-test="2" class="test-switcher__item" type="button">Тест 2</button>
+    </nav>
+    <div class="device-area">
+      <section class="phone" data-test="1" aria-label="Прототип ленты рекомендаций">
+        <section id="map-screen" class="screen screen--map" aria-label="Главный экран карты">
+          <img src="public/assets/map-screen.png" alt="Карта центра Санкт-Петербурга" class="map-image">
+          <div class="home-sheet" data-figma-node="6007:15679">
+            <button class="drag-control" id="open-feed" type="button" aria-label="Открыть рекомендации"><img src="public/assets/figma/52b90.svg" alt=""></button>
+            <div class="google-header google-only" data-figma-node="6028:28121"><button class="google-heading" data-google-open type="button">Местный вайб</button><div class="google-weather" aria-label="Солнечно, плюс 25 градусов"><img src="public/assets/figma/97b58.svg" alt=""><span>+25°</span></div></div>
+            <div class="search-row">
+              <button class="search-field search-field--button" data-open-feed type="button"><img class="icon" src="public/assets/figma/24eeb.svg" alt=""><span>Поиск и выбор мест</span></button>
+              <button class="bookmarks-button" data-open-saved type="button" aria-label="Закладки"><img class="icon" src="public/assets/figma/b0968.svg" alt=""></button>
+            </div>
+            <div class="home-suggest" aria-label="Быстрые категории">
+              <button data-home-category="food"><span class="suggest-icon"><img src="public/assets/figma/rubric-food-symbol.svg" alt=""></span>Еда</button>
+              <button data-home-category="coffee"><span class="suggest-icon"><img src="public/assets/figma/rubric-coffee-symbol.svg" alt=""></span>Кафе</button>
+              <button data-home-unavailable><span class="suggest-icon"><img src="public/assets/figma/rubric-groceries-symbol.svg" alt=""></span>Продукты</button>
+              <button data-home-unavailable><span class="suggest-icon"><img src="public/assets/figma/rubric-beauty-symbol.svg" alt=""></span>Красота</button>
+            </div>
+            <div id="home-preview" class="home-preview"></div>
+            <div id="google-home-preview" class="google-carousel google-only" aria-label="Местный вайб"></div>
+          </div>
+          <nav class="tabbar" aria-label="Разделы карты" data-figma-node="6007:16099">
+            <button data-map-action><img class="icon" src="public/assets/figma/318f4.svg" alt="">Навигатор</button>
+            <button data-map-action><img class="icon" src="public/assets/figma/d0802.svg" alt="">Заправки</button>
+            <button data-map-action><img class="icon" src="public/assets/figma/b46d8.svg" alt="">Транспорт</button>
+            <button data-map-action><img class="icon" src="public/assets/figma/12707.svg" alt="">Такси</button>
+            <div class="home-indicator"></div>
+          </nav>
+        </section>
+        <section id="feed-screen" class="screen screen--feed is-hidden" aria-label="Лента рекомендаций" aria-hidden="true">
+          <img class="feed-map" src="public/assets/figma/a2a85.png" alt="">
+          <div class="map-dim"></div>
+          <div class="status-bar status-bar--light" aria-hidden="true"><span>9:41</span><img src="public/assets/figma/610a3.svg" alt=""></div>
+          <div class="city-label"><img src="public/assets/figma/ff0bd.svg" alt="">Санкт-Петербург</div>
+          <div class="feed-sheet" data-figma-node="6007:17533">
+            <header class="feed-header" data-figma-node="6049:33191">
+              <button id="collapse-feed" class="drag-control" type="button" aria-label="Свернуть ленту"><img src="public/assets/figma/52b90.svg" alt=""></button>
+              <div class="google-header google-only" data-figma-node="6028:28121"><h1 class="google-heading">Местный вайб</h1><div class="google-weather" aria-label="Солнечно, плюс 25 градусов"><img src="public/assets/figma/97b58.svg" alt=""><span>+25°</span></div></div>
+              <div class="search-row">
+                <label class="search-field"><img class="icon" src="public/assets/figma/24eeb.svg" alt=""><input id="search" type="search" placeholder="Поиск и выбор мест" aria-label="Поиск мест" autocomplete="off"></label>
+                <button class="bookmarks-button" id="toggle-saved" type="button" aria-label="Показать сохранённые места" aria-pressed="false"><img class="icon" src="public/assets/figma/b0968.svg" alt=""></button>
+              </div>
+              <div class="intents-wrap"><div class="intents" id="intents" role="tablist" aria-label="Категории рекомендаций"></div></div>
+            </header>
+            <div class="feed-scroll" id="feed-scroll" tabindex="0" aria-label="Места в выбранной категории"><div id="tile-grid" class="tile-grid" aria-live="polite"></div><div id="google-feed" class="google-only"></div></div>
+          </div>
+          <div class="map-action"><button id="back-to-map" type="button"><img class="icon" src="public/assets/figma/7ac51.svg" alt="">На карте</button></div>
+        </section>
+        <section id="discovery-screen" class="screen screen--discovery is-hidden" aria-label="Места на карте" aria-hidden="true">
+          <img class="discovery-map" src="public/assets/discovery-all.png" alt="Карта с рекомендациями">
+          <div class="status-bar" aria-hidden="true"><span>9:41</span><img src="public/assets/figma/fc574.svg" alt=""></div>
+          <section class="discovery-sheet" aria-label="Лента мест на карте">
+            <header class="discovery-header">
+              <button id="discovery-drag" class="drag-control" type="button" aria-label="Развернуть ленту на карте" aria-expanded="false"><img src="public/assets/figma/7e62e.svg" alt=""></button>
+              <h1><button id="discovery-title" type="button">Рекомендации для вас</button></h1>
+              <button id="discovery-search-toggle" class="discovery-action" type="button" aria-label="Поиск в категории" aria-expanded="false"><img src="public/assets/figma/d4366.svg" alt=""></button>
+              <button id="discovery-close" class="discovery-action" type="button" aria-label="Закрыть дискавери-режим"><img src="public/assets/figma/bcefa.svg" alt=""></button>
+            </header>
+            <label class="discovery-search" hidden><input type="search" placeholder="Поиск мест" aria-label="Поиск мест на карте"></label>
+            <div class="discovery-scroll" tabindex="0" aria-label="Места категории"><div id="discovery-grid" class="tile-grid" aria-live="polite"></div></div>
+          </section>
+        </section>
+        <section id="place-screen" class="screen screen--place is-hidden" aria-label="Карточка места" aria-hidden="true"></section>
+        <div id="toast" class="toast" role="status" hidden></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="app.js?v=fun-section-1"></script>
+</body>
+</html>

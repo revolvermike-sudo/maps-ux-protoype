@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="36" height="12" viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Stepper">
+<path d="M0 6C0 2.68629 2.68629 0 6 0H30C33.3137 0 36 2.68629 36 6V6C36 9.31371 33.3137 12 30 12H6C2.68629 12 0 9.31371 0 6V6Z" fill="black" fill-opacity="0.4" style="fill:black;fill-opacity:0.4;"/>
+<rect id="line" x="4" y="4" width="12" height="4" rx="2" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle id="dot" cx="22" cy="6" r="2" fill="white" fill-opacity="0.5" style="fill:white;fill-opacity:0.5;"/>
+<circle id="dot_2" cx="30" cy="6" r="2" fill="white" fill-opacity="0.5" style="fill:white;fill-opacity:0.5;"/>
+</g>
+</svg>

@@ -1,0 +1,109 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/10c0690e-9f3a-46b9-a601-f2db41c99d6d";
+const imgTabs = `${assetPathPrefix}/e2ab2.svg`;
+
+type TabsProps = {
+  className?: string;
+  badge?: boolean;
+  selected?: boolean;
+  value?: string;
+};
+
+function Tabs({ className, badge = true, selected = false, value = "404" }: TabsProps) {
+  const isSelected = selected;
+  return (
+    <div className={className || "content-stretch flex gap-[4px] items-center justify-center relative"} id={isSelected ? "node-6063_36216" : "node-6063_36211"}>
+      <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" id={isSelected ? "node-6063_36217" : "node-6063_36212"} data-name="tabFrame">
+        <p className={`[word-break:break-word] font-[family-name:var(--fontfamily,"YS_Text:Medium")] leading-[16px] not-italic relative shrink-0 text-[14px] whitespace-nowrap ${isSelected ? String.raw`text-[color:var(--text\/action,#196dff)]` : String.raw`text-[color:var(--text\/primary,black)]`}`} id={isSelected ? "node-6063_36218" : "node-6063_36213"}>
+          Обзор
+        </p>
+        {isSelected && <div className="absolute bg-[var(--icons\/action,#196dff)] bottom-0 h-[4px] left-0 right-0 rounded-[2px]" data-node-id="6063:36219" data-name="Selector" />}
+      </div>
+      {badge && (
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex h-[20px] items-center overflow-clip px-[6px] relative rounded-[6px] shrink-0" data-node-id="6063:36214" data-name="Badge">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="6063:36215">
+            {value}
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function CardTabs() {
+  return (
+    <div className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[24px] items-start px-[16px] py-[8px] relative size-full" data-node-id="6063:42177" data-name="cardTabs">
+      <Tabs badge={false} className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-16px_-8px] mask-size-[375px_56px] relative shrink-0" selected />
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-83px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42182" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42182;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42182;32289:53196">
+            Меню
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-147px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42183" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42183;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42183;32289:53196">
+            Фото
+          </p>
+        </div>
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex h-[20px] items-center overflow-clip px-[6px] relative rounded-[6px] shrink-0" data-node-id="I6063:42183;32289:53197" data-name="Badge">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6063:42183;32289:53198">
+            223
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-243px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42184" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42184;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42184;32289:53196">
+            Отзывы
+          </p>
+        </div>
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex h-[20px] items-center overflow-clip px-[6px] relative rounded-[6px] shrink-0" data-node-id="I6063:42184;32289:53197" data-name="Badge">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6063:42184;32289:53198">
+            404
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-357px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42185" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42185;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42185;32289:53196">
+            Новости
+          </p>
+        </div>
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex h-[20px] items-center overflow-clip px-[6px] relative rounded-[6px] shrink-0" data-node-id="I6063:42185;32289:53197" data-name="Badge">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6063:42185;32289:53198">
+            2
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-461px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42186" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42186;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42186;32289:53196">
+            Особенности
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[4px] items-center justify-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-574px_-8px] mask-size-[375px_56px] relative shrink-0" data-node-id="6063:42187" style={{ maskImage: `url("${imgTabs}")` }} data-name="-tabs">
+        <div className="content-stretch flex items-center justify-center py-[12px] relative shrink-0" data-node-id="I6063:42187;32289:53195" data-name="tabFrame">
+          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6063:42187;32289:53196">
+            Похожие места
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Size 12 - Medium: Font(family: "fontFamily", style: Medium, size: 12, weight: 500, lineHeight: 14, letterSpacing: 0).
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

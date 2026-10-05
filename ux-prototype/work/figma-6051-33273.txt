@@ -1,0 +1,31 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/6cf64055-1c81-43aa-915c-8759f75d9cd9";
+const imgBookmark24 = `${assetPathPrefix}/0b299.svg`;
+
+export default function Button() {
+  return (
+    <div className="bg-[rgba(0,0,0,0.4)] content-stretch flex items-center justify-center p-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/24pt-\(xxl\),24px)] size-full" data-node-id="6051:33273" data-name="button">
+      <div className="relative shrink-0 size-[24px]" data-node-id="I6051:33273;383:6224" data-name="bookmark_24">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBookmark24} />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## bookmark_24
+**Node ID:** 6007:684
+
+favorites
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

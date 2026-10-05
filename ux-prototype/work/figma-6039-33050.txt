@@ -1,0 +1,111 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/e5c7d234-00f4-4257-ab0e-cc8deeba30fc";
+const imgBase = `${assetPathPrefix}/f619d.png`;
+const imgPhoto = `${assetPathPrefix}/83f5c.png`;
+const img14RubricsPub14 = `${assetPathPrefix}/a4d4d.svg`;
+const imgMore16 = `${assetPathPrefix}/bb003.svg`;
+const imgLike12Flip = `${assetPathPrefix}/ae4d0.svg`;
+const imgBookmark24 = `${assetPathPrefix}/0b299.svg`;
+const imgStepper = `${assetPathPrefix}/d48c7.svg`;
+
+export default function Preset() {
+  return (
+    <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative size-full" data-node-id="6039:33050" data-name="Preset">
+      <div className="aspect-[360/480] content-stretch flex flex-col gap-[8px] items-start overflow-clip p-[8px] relative rounded-[24px] shrink-0 w-full" data-node-id="I6039:33050;7731:9796" data-name="Base">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+          <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgBase} />
+          <div className="absolute inset-0 rounded-[24px]" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 24%), linear-gradient(180deg, rgba(0, 0, 0, 0) 71.65%, rgba(0, 0, 0, 0.32) 100%)" }} />
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] items-start justify-between min-h-px relative w-full" data-node-id="I6039:33050;7731:9796;7766:18669" data-name="Frame">
+          <div className="bg-[rgba(0,0,0,0.4)] content-stretch flex gap-[4px] items-center px-[6px] py-[4px] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0" data-node-id="I6039:33050;7731:9796;7766:18670" data-name="Slot · 1">
+            <div className="relative shrink-0 size-[14px]" data-node-id="I6039:33050;7731:9796;7766:18670;9061:165027" data-name="14 / rubrics_cafe_14">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsPub14} />
+            </div>
+            <div className="content-stretch flex h-[16px] items-center relative shrink-0" data-node-id="I6039:33050;7731:9796;7766:18670;9061:86439" data-name="-awardsMaps">
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6039:33050;7731:9796;7766:18670;9061:86440">
+                <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6039:33050;7731:9796;7766:18670;9061:86441">
+                  <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/color-bg,white)] whitespace-nowrap" data-node-id="I6039:33050;7731:9796;7766:18670;9061:86442" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    5,0
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex items-center p-[4px] relative shrink-0" data-node-id="I6039:33050;7731:9796;7766:18671" data-name="more">
+            <div className="relative shrink-0 size-[16px]" data-node-id="I6039:33050;7731:9796;7766:18671;7698:23415" data-name="more_16">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMore16} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] items-end justify-between min-h-px relative w-full" data-node-id="I6039:33050;7731:9796;7766:18672" data-name="Frame">
+          <div className="content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex gap-[10px] items-center opacity-0 relative shrink-0" data-node-id="I6039:33050;7731:9796;7766:18673" data-name="type=author">
+            <div className="relative shrink-0 size-[40px]" data-node-id="I6039:33050;7731:9796;7766:18673;7698:23171" data-name="Photo">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" height="40" src={imgPhoto} width="40" />
+            </div>
+            <div className="absolute bottom-0 right-0 size-[16px]" data-node-id="I6039:33050;7731:9796;7766:18673;7698:23173" data-name="stars">
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute flex items-center justify-center left-[calc(50%-0.22px)] size-[13.553px] top-[calc(50%+0.11px)]" data-node-id="I6039:33050;7731:9796;7766:18673;7698:23173;7698:23167">
+                <div className="-rotate-8 flex-none">
+                  <div className="relative size-[12px]" data-name="like_12_flip">
+                    <div className="absolute inset-[-8.36%_-8.33%_-8.33%_-8.33%]">
+                      <img alt="" className="block max-w-none size-full" src={imgLike12Flip} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[rgba(0,0,0,0.4)] content-stretch flex items-center justify-center p-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/24pt-\(xxl\),24px)] shrink-0" data-node-id="I6039:33050;7731:9796;7766:18674" data-name="type=bookmark">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I6039:33050;7731:9796;7766:18674;383:6224" data-name="bookmark_24">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBookmark24} />
+            </div>
+          </div>
+          <div className="-translate-x-1/2 absolute bottom-0 h-[12px] left-1/2 w-[36px]" data-node-id="I6039:33050;7731:9796;7766:18675" data-name="Stepper">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStepper} />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[4px] items-start pt-[var(--padding\/00pt-\(null\),0px)] px-[var(--padding\/04pt-\(xss\),4px)] relative shrink-0 w-full" data-node-id="I6039:33050;7766:17414" data-name="Text">
+        <div className="content-stretch flex flex-col gap-[2px] items-start relative shrink-0 w-full" data-node-id="I6039:33050;7766:17414;7762:133999">
+          <div className="content-stretch flex items-center p-[var(--padding\/00pt-\(null\),0px)] relative shrink-0 w-full" data-node-id="I6039:33050;7766:17414;7698:23192" data-name="subtitle">
+            <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-w-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis" data-node-id="I6039:33050;7766:17414;7698:23192;7698:23184" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+              Фонтан по имени Олег с коктейлем «Негрони»
+            </p>
+          </div>
+          <div className="content-stretch flex items-center p-[var(--padding\/00pt-\(null\),0px)] relative shrink-0 w-full" data-node-id="I6039:33050;7766:17414;7698:23194" data-name="title">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['YS_Geo:Medium'] font-medium leading-[18px] min-w-px overflow-hidden relative text-[16px] text-[color:var(--text\/primary,black)] text-ellipsis tracking-[0.16px]" data-node-id="I6039:33050;7766:17414;7698:23194;7698:23190">
+              Tagliatella Caffé
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[4px] h-[16px] items-center relative shrink-0 w-full" data-node-id="I6039:33050;7766:17414;7698:23196" data-name="additional">
+          <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Regular')] gap-[4px] items-center leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6039:33050;7766:17414;7698:23196;7698:23028">
+            <p className="overflow-hidden relative shrink-0 text-ellipsis whitespace-nowrap" data-node-id="I6039:33050;7766:17414;7698:23196;7698:23029">
+              м. Маяковская
+            </p>
+            <p className="overflow-hidden relative shrink-0 text-ellipsis whitespace-pre" data-node-id="I6039:33050;7766:17414;7698:23196;7698:23030" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>{`·  210 м`}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Crew/@kefiijrw: , Button: Effect(type: DROP_SHADOW, color: #00000033, offset: (0, 2), radius: 6, spread: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## bookmark_24
+**Node ID:** 6007:684
+
+favorites
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

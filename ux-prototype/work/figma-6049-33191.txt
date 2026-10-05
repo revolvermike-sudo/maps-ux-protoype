@@ -1,0 +1,116 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/fb97d9f9-e5fe-4b23-951c-f494ca92b1db";
+const imgMic24 = `${assetPathPrefix}/24eeb.svg`;
+const imgBookmarks24Flip = `${assetPathPrefix}/b0968.svg`;
+
+function Mic24({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="6007:553" data-name="mic_24">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMic24} />
+    </div>
+  );
+}
+
+type HeaderSearchIntentsProps = {
+  className?: string;
+  state?: "Default";
+};
+
+function HeaderSearchIntents({ className, state = "Default" }: HeaderSearchIntentsProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start overflow-clip relative w-[375px]"} data-node-id="6049:33191">
+      <div className="content-stretch flex gap-[8px] items-start overflow-clip pt-[var(--padding\/16pt-\(l\),16px)] px-[16px] relative rounded-[20px] shrink-0 w-full" data-node-id="6049:33159" data-name="Search">
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-[1_0_0] h-[48px] items-center min-w-px px-[12px] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)]" data-node-id="6049:33160" data-name="Input">
+          <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="6049:33161" data-name="Alise + Text">
+            <Mic24 className="relative shrink-0 size-[24px]" />
+            <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary-variant,#4d4d4d)] w-[215px]" data-node-id="6049:33163">
+              <p className="leading-[20px]">Поиск и выбор мест</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex gap-[var(--padding\/08pt-\(s\),8px)] items-center justify-center overflow-clip px-[var(--padding\/16pt-\(l\),16px)] py-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="6049:33164" data-name="Button">
+          <div className="relative shrink-0 size-[24px]" data-node-id="I6049:33164;12292:5005" data-name="navi_24_flip">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBookmarks24Flip} />
+          </div>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex gap-[4px] items-start px-[var(--padding\/16pt-\(l\),16px)] py-[var(--padding\/12pt-\(m\),12px)] relative shrink-0 w-[375px]" data-node-id="6049:33165" data-name="intents">
+        <div className="content-stretch flex h-[40px] items-center justify-center overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0" data-node-id="I6049:33165;6028:26521" data-name="Button">
+          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] text-center whitespace-nowrap" data-node-id="I6049:33165;6028:26523">
+            <p className="leading-[16px]">Для вас</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Medium')] gap-[6px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26526" data-name="Button">
+          <div className="flex flex-col font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[22px] text-[color:var(--text\/primary-variant,#4d4d4d)] w-[24px]" data-node-id="I6049:33165;6028:26527">
+            <p className="leading-[24px]">🌤</p>
+          </div>
+          <div className="flex flex-col justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26528">
+            <p className="leading-[16px]">Продлить лето</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Medium')] gap-[6px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26506" data-name="Button">
+          <div className="flex flex-col font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[22px] text-[color:var(--text\/primary-variant,#4d4d4d)] w-[24px]" data-node-id="I6049:33165;6028:26507">
+            <p className="leading-[24px]">🥗</p>
+          </div>
+          <div className="flex flex-col justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26508">
+            <p className="leading-[16px]">Поесть</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Medium')] gap-[6px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26512" data-name="Button">
+          <div className="flex flex-col font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[22px] text-[color:var(--text\/color-bg,white)] w-[24px]" data-node-id="I6049:33165;6028:26513">
+            <p className="leading-[24px]">🌳</p>
+          </div>
+          <div className="flex flex-col justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26514">
+            <p className="leading-[16px]">Погулять</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex gap-[4px] h-[40px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26515" data-name="Button">
+          <div className="flex flex-col font-[family-name:var(--fontfamilyalt,'YS_Text:Medium')] font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[#ff83b4] text-[22px] w-[24px]" data-node-id="I6049:33165;6028:26516">
+            <p className="leading-[24px]">🧸</p>
+          </div>
+          <div className="flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26517">
+            <p className="leading-[16px]">С детьми</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Medium')] gap-[4px] h-[40px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26518" data-name="Button">
+          <div className="flex flex-col font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[18px] text-[color:var(--text\/primary-variant,#4d4d4d)] w-[24px]" data-node-id="I6049:33165;6028:26519">
+            <p className="leading-[24px]">🎤</p>
+          </div>
+          <div className="flex flex-col justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26520">
+            <p className="leading-[16px]">Развлечься</p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex font-[family-name:var(--fontfamily,'YS_Text:Medium')] gap-[6px] items-center justify-center leading-[0] overflow-clip pl-[8px] pr-[12px] py-[var(--padding\/08pt-\(s\),8px)] relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 text-center" data-node-id="I6049:33165;6028:26509" data-name="Button">
+          <div className="flex flex-col font-[var(--fontweight,normal)] justify-center relative shrink-0 text-[22px] text-[color:var(--text\/primary-variant,#4d4d4d)] w-[24px]" data-node-id="I6049:33165;6028:26510">
+            <p className="leading-[24px]">🍷</p>
+          </div>
+          <div className="flex flex-col justify-center not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6049:33165;6028:26511">
+            <p className="leading-[16px]">Выпить</p>
+          </div>
+        </div>
+        <div className="absolute bg-gradient-to-r bottom-0 from-[rgba(255,255,255,0)] h-[64px] right-0 to-white w-[48px]" data-node-id="I6049:33165;6028:26740" data-name="Gradient" />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 16 - Medium: Font(family: "fontFamily", style: Medium, size: 16, weight: 400, lineHeight: 20, letterSpacing: 0), Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Gradient UI [day] / Gradient: .
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button
+**Node ID:** 6007:409
+
+**Documentation:**
+- [https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralButton/GeneralButtonViewModelFactory.swift](https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralButton/GeneralButtonViewModelFactory.swift)
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

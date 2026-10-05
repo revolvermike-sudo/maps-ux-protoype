@@ -1,0 +1,83 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/9c01701a-f17e-4649-8672-9d1a560c23fe";
+const imgPointOnMap24 = `${assetPathPrefix}/d0302.svg`;
+const imgReservation24 = `${assetPathPrefix}/10eb1.svg`;
+
+type AddressProps = {
+  className?: string;
+  type?: "entrance + route";
+};
+
+function Address({ className, type = "entrance + route" }: AddressProps) {
+  return (
+    <div className={className || "bg-[var(--bg\\/primary,white)] content-stretch flex flex-col items-start relative w-[375px]"} data-node-id="6063:36951">
+      <div className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[16px] items-center pb-[4px] pt-[16px] px-[16px] relative shrink-0 w-full" data-node-id="6063:36952" data-name="List Item (old)">
+        <div className="relative shrink-0 size-[24px]" data-node-id="I6063:36952;12251:3810" data-name="reservation_24">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPointOnMap24} />
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px py-[2px] relative" data-node-id="I6063:36952;12254:6250" data-name="Text">
+          <p className="[word-break:break-word] font-['YS_Text:Medium'] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] w-full" data-node-id="I6063:36952;12254:6251">
+            Адрес
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[16px] items-center pt-[8px] px-[16px] relative shrink-0 w-full" data-node-id="6063:36953" data-name="List Item (old)">
+        <div className="relative shrink-0 size-[24px]" data-node-id="I6063:36953;12251:3810" data-name="reservation_24">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgReservation24} />
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px py-[2px] relative" data-node-id="I6063:36953;12254:6250" data-name="Text">
+          <p className="[word-break:break-word] font-['YS_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,black)] w-full" data-node-id="I6063:36953;12254:6251">
+            Ул. Малая Моховая, 15с1
+          </p>
+        </div>
+      </div>
+      <div className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[16px] items-center pb-[16px] pt-[8px] px-[16px] relative shrink-0 w-full" data-node-id="6063:36954" data-name="listitem">
+        <div className="relative shrink-0 size-[24px]" data-node-id="6063:36955" data-name="reservation_24">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgReservation24} />
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px py-[2px] relative" data-node-id="6063:36956" data-name="Text">
+          <div className="bg-[var(--bg\/primary,white)] content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="6063:36957" data-name="Entrance + Route">
+            <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="6063:36958" data-name="Buttons">
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/action,#196dff)] whitespace-nowrap" data-node-id="6063:36959">
+                Показать входы
+              </p>
+              <div className="flex items-center justify-center relative shrink-0" data-node-id="6063:36960">
+                <div className="-scale-y-100 flex-none rotate-180">
+                  <div className="bg-[var(--icons\/additional,#ccc)] h-[12px] relative w-px" data-name="Divider" />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/action,#196dff)] whitespace-nowrap" data-node-id="6063:36961">
+                Маршрут
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Address1() {
+  return <Address className="bg-[var(--bg\/primary,white)] content-stretch flex flex-col items-start relative size-full" />;
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Size 14 - Regular: Font(family: "fontFamily", style: Regular, size: 14, weight: 400, lineHeight: 16, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## List Item (old)
+**Node ID:** 6063:36609
+
+**Documentation:**
+- [https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralItem/GeneralItemViewModelFactory.swift](https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralItem/GeneralItemViewModelFactory.swift)
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

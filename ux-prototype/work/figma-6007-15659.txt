@@ -1,0 +1,235 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/a741281f-9062-4f10-993d-ce28fbb0a56a";
+const imgZoomOut48 = `${assetPathPrefix}/c5b3a.svg`;
+const imgZoomIn48 = `${assetPathPrefix}/60bb6.svg`;
+const imgLocatonAngleFilled48 = `${assetPathPrefix}/c4d36.svg`;
+const imgCompassV248Day = `${assetPathPrefix}/efd41.svg`;
+const imgNotch = `${assetPathPrefix}/7cd57.svg`;
+const imgSigns = `${assetPathPrefix}/eba05.svg`;
+const imgProfilePlus32 = `${assetPathPrefix}/bb84c.svg`;
+const imgMap = `${assetPathPrefix}/a2a85.png`;
+const imgAvatar = `${assetPathPrefix}/f3ac9.png`;
+const imgSun = `${assetPathPrefix}/4605a.svg`;
+const imgLayersOff48Day = `${assetPathPrefix}/257f6.svg`;
+const imgButtonsFloatingS168 = `${assetPathPrefix}/9f37b.svg`;
+const img24ToolbarNavi24 = `${assetPathPrefix}/5c444.svg`;
+const imgHome24 = `${assetPathPrefix}/9e156.svg`;
+
+function ZoomOut48({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[48px]"} data-node-id="6007:15105" data-name="zoom_out_48">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgZoomOut48} />
+    </div>
+  );
+}
+
+function ZoomIn48({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[48px]"} data-node-id="6007:15101" data-name="zoom_in_48">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgZoomIn48} />
+    </div>
+  );
+}
+
+function LocatonAngleFilled48({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[48px]"} data-node-id="6007:15557" data-name="locaton_angle_filled_48">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLocatonAngleFilled48} />
+    </div>
+  );
+}
+
+type ButtonLocationProps = {
+  className?: string;
+  rotated?: boolean;
+  scenario?: "main & transit";
+  state?: "not tracking";
+};
+
+function ButtonLocation({ className, rotated = false, scenario = "main & transit", state = "not tracking" }: ButtonLocationProps) {
+  return (
+    <div className={className || "content-stretch flex gap-[var(--padding\\/12pt-\\(m\\),12px)] items-center justify-center p-[var(--padding\\/00pt-\\(null\\),0px)] relative rounded-[var(--corner-radius\\/999pt-\\(circle\\),1000px)]"} data-node-id="6007:15094">
+      {rotated && (
+        <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] overflow-clip relative rounded-[100px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.2)] shrink-0 size-[48px]" data-node-id="6007:15095" data-name="buttonLocation -compass">
+          <div className="absolute flex inset-[-9.94px] items-center justify-center" data-node-id="I6007:15095;43201:3830" style={{ containerType: "size" }}>
+            <div className="-rotate-45 flex-none h-[hypot(50cqw,50cqh)] w-[hypot(50cqw,-50cqh)]">
+              <div className="relative size-full" data-name="compass_v2_48_day">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCompassV248Day} />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[666px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.2)] shrink-0" data-node-id="6007:15096" data-name="geo -location">
+        <LocatonAngleFilled48 className="relative shrink-0 size-[48px]" />
+      </div>
+    </div>
+  );
+}
+
+type StatusBarProps = {
+  className?: string;
+  dark?: "false";
+  model?: "13 mini";
+  notch?: boolean;
+};
+
+function StatusBar({ className, dark = "false", model = "13 mini", notch = false }: StatusBarProps) {
+  return (
+    <div className={className || "h-[50px] relative w-[375px]"} data-node-id="6011:11144">
+      {notch && (
+        <div className="-translate-x-1/2 absolute h-[32px] left-[calc(50%+0.5px)] top-0 w-[172px]" data-node-id="6011:11145" data-name="notch">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgNotch} />
+        </div>
+      )}
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Text:Semibold'] h-[20px] leading-[22px] left-[56px] not-italic text-[17px] text-black text-center top-[19px] tracking-[-0.408px] w-[54px]" data-node-id="6011:11146" style={{ fontFeatureSettings: '"case" 1' }}>
+        9:41
+      </p>
+      <div className="-translate-x-1/2 absolute h-[13px] left-[calc(50%+131.7px)] top-[23px] w-[74.401px]" data-node-id="6011:11147" data-name="signs">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSigns} />
+      </div>
+    </div>
+  );
+}
+
+function ProfilePlus32({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[32px]"} data-node-id="6007:15280" data-name="profile_plus_32">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgProfilePlus32} />
+    </div>
+  );
+}
+
+export default function Map() {
+  return (
+    <div className="relative size-full" data-node-id="6007:15659" data-name="Map">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img alt="" className="absolute h-[98.61%] left-[-22.87%] max-w-none top-[-7.72%] w-[145.74%]" src={imgMap} />
+      </div>
+      <div className="absolute content-stretch flex items-start justify-between left-0 p-[var(--padding\/12pt-\(m\),12px)] right-0 top-[50px]" data-node-id="6007:15661" data-name="Header">
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0" data-node-id="6007:15663">
+          <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0 size-[48px]" data-node-id="6007:15664" data-name="search -menu">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[32px] top-1/2" data-node-id="I6007:15664;30593:33041" data-name="menu -user">
+              <ProfilePlus32 className="absolute left-0 size-[32px] top-0" />
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 rounded-[150px] size-[24px] top-1/2" data-node-id="I6007:15664;30593:33041;30593:33033" data-name="Avatar">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[150px] size-full" src={imgAvatar} />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex flex-col items-center justify-center px-[6px] py-[4px] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0 size-[48px]" data-node-id="6007:15665" data-name="Weather v2">
+            <div className="h-[24px] relative shrink-0 w-[26px]" data-node-id="I6007:15665;3278:52382">
+              <div className="absolute left-0 size-[26px] top-[-2px]" data-node-id="I6007:15665;3278:50316" data-name="Weather for white theme">
+                <div className="absolute inset-[10.42%]" data-node-id="I6007:15665;3278:50316;7864:52679;232:26646;212:24070" data-name="sun">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSun} />
+                </div>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center w-[32px]" data-node-id="I6007:15665;3278:50317">
+              <p className="leading-[16px]">+25°</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0" data-node-id="6007:15666" data-name="Contols">
+          <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex items-center justify-center relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="6007:15667" data-name="Button: layers">
+            <div className="relative shrink-0 size-[48px]" data-node-id="I6007:15667;15279:6573" data-name="layers_off_48_day">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLayersOff48Day} />
+            </div>
+          </div>
+          <div className="relative shrink-0 size-[48px]" data-node-id="6007:15668" data-name="Buttons / Floating S×1 68">
+            <div className="absolute inset-[-8.33%_-12.5%_-16.67%_-12.5%]">
+              <img alt="" className="block max-w-none size-full" src={imgButtonsFloatingS168} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <StatusBar className="absolute h-[50px] left-0 right-0 top-0" />
+      <div className="absolute bottom-[276px] h-[72px] left-0 w-[367px]" data-node-id="6007:15670" data-name="Routes+Location">
+        <ButtonLocation className="absolute bottom-[12px] content-stretch flex gap-[var(--padding\/12pt-\(m\),12px)] items-center justify-center p-[var(--padding\/00pt-\(null\),0px)] right-0 rounded-[var(--corner-radius\/999pt-\(circle\),1000px)]" />
+        <div className="absolute bottom-0 content-stretch flex items-start left-0 overflow-x-auto overflow-y-clip p-[12px] w-[311px]" data-node-id="6007:15672" data-name="Suggest / Suggest: main">
+          <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="6007:15673" data-name="Routes + Suggest">
+            <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex gap-[8px] h-[48px] items-center justify-center px-[12px] py-[8px] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="6007:15675" data-name="Buttons">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I6007:15675;1065:2894" data-name="24 / Toolbar / navi_24">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={img24ToolbarNavi24} />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['YS_Text:Medium'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary-variant,#4d4d4d)] whitespace-nowrap" data-node-id="I6007:15675;1065:2893">
+                <p className="leading-[20px]">Куда?</p>
+              </div>
+            </div>
+            <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex items-center justify-center px-[16px] py-[12px] relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="6007:15676" data-name="Buttons">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I6007:15676;1065:2768" data-name="24 / Toolbar / navi_24">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHome24} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[12px] items-start right-[12px] top-[calc(50%-63px)]" data-node-id="6007:15678" data-name="Button: zoom">
+        <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex items-center justify-center relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="I6007:15678;15225:133412" data-name="button">
+          <ZoomIn48 className="relative shrink-0 size-[48px]" />
+        </div>
+        <div className="bg-[var(--button\/floating,rgba(255,255,255,0.9))] content-stretch drop-shadow-[0px_2px_3px_rgba(0,0,0,0.2)] flex items-center justify-center relative rounded-[var(--corner-radius\/16pt-\(l\),16px)] shrink-0" data-node-id="I6007:15678;15225:133415" data-name="button">
+          <ZoomOut48 className="relative shrink-0 size-[48px]" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Gradients / Logo & Pill: , Crew/Fallback: , Button: Effect(type: DROP_SHADOW, color: #00000033, offset: (0, 2), radius: 6, spread: 0), Morda_single/Moon, sun, lighning: , Text [day]/Primary: #000000, Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Size 16 - Medium: Font(family: "fontFamily", style: Medium, size: 16, weight: 400, lineHeight: 20, letterSpacing: 0), BW / Black: #000000.
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Button: layers
+**Node ID:** 6007:15531
+
+layers
+
+**Documentation:**
+- [https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A85801](https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A85801)
+
+## model=13 mini, dark?=false
+**Node ID:** 6011:11144
+
+375x812
+
+## Button: location
+**Node ID:** 6007:15093
+
+location, compass
+
+**Documentation:**
+- [https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A86087](https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A86087)
+
+## locaton_angle_filled_48
+**Node ID:** 6007:15557
+
+Нет слежки за местоположением geolocation, location, gps
+
+## Button: zoom
+**Node ID:** 6007:15107
+
+zoom
+
+**Documentation:**
+- [https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A85801](https://www.figma.com/file/KE7ky6J7LgqiWqi8su30kEs8/Maps-%E2%80%94-Home-%26-Map-Controls?node-id=8434%3A85801)
+
+## zoom_in_48
+**Node ID:** 6007:15101
+
+add
+
+## zoom_out_48
+**Node ID:** 6007:15105
+
+add
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

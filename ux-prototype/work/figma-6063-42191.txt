@@ -1,0 +1,97 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/a52df852-9ca9-4fb0-9c92-4cf2a9c5ab32";
+const imgImage = `${assetPathPrefix}/d4bc9.png`;
+const imgImage1 = `${assetPathPrefix}/41f96.png`;
+const imgImage2 = `${assetPathPrefix}/e14fc.png`;
+const imgImage3 = `${assetPathPrefix}/2129a.png`;
+const imgImage4 = `${assetPathPrefix}/23a1e.png`;
+const imgImage5 = `${assetPathPrefix}/b9bd3.png`;
+
+export default function StoriesFrame() {
+  return (
+    <div className="bg-[var(--bg\/primary,white)] content-stretch flex flex-col items-start py-[20px] relative size-full" data-node-id="6063:42191" data-name="storiesFrame">
+      <div className="content-stretch flex gap-[8px] items-start px-[16px] relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436" data-name="Module / Stories">
+        <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0 w-[90px]" data-node-id="I6063:42191;27105:115436;13415:57628" data-name="Atom / Story snippet">
+          <div className="h-[118px] relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57628;13415:54590" data-name="Image">
+            <div className="absolute border border-[rgba(0,0,0,0.05)] border-solid inset-[4px] rounded-[12px]" data-node-id="I6063:42191;27105:115436;13415:57628;13415:47288" data-name="image">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[12px]">
+                <img alt="" className="absolute h-full left-[-62.56%] max-w-none top-0 w-[201.19%]" src={imgImage} />
+              </div>
+            </div>
+            <div className="absolute border-2 border-[var(--button\/primary,#196dff)] border-solid inset-0 rounded-[16px]" data-node-id="I6063:42191;27105:115436;13415:57628;13415:47291" data-name="border blue" />
+          </div>
+          <div className="content-stretch flex flex-col gap-[2px] items-center overflow-clip relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57628;13415:54600" data-name="Name + Date">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="I6063:42191;27105:115436;13415:57628;13415:57624" data-name="Highlight name">
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] text-center whitespace-nowrap" data-node-id="I6063:42191;27105:115436;13415:57628;13415:57626">
+                Новое меню
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0 w-[90px]" data-node-id="I6063:42191;27105:115436;13415:57639" data-name="Atom / Story snippet">
+          <div className="h-[118px] relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57639;13415:54590" data-name="Image">
+            <div className="absolute border border-[rgba(0,0,0,0.05)] border-solid inset-[4px] rounded-[12px]" data-node-id="I6063:42191;27105:115436;13415:57639;13415:47288" data-name="image">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgImage1} />
+            </div>
+            <div className="absolute border-2 border-[var(--button\/primary,#196dff)] border-solid inset-0 rounded-[16px]" data-node-id="I6063:42191;27105:115436;13415:57639;13415:47291" data-name="border blue" />
+          </div>
+          <div className="content-stretch flex flex-col gap-[2px] items-center overflow-clip relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57639;13415:54600" data-name="Name + Date">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="I6063:42191;27105:115436;13415:57639;13415:57624" data-name="Highlight name">
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] text-center whitespace-nowrap" data-node-id="I6063:42191;27105:115436;13415:57639;13415:57626">
+                Мастер-класс
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0 w-[90px]" data-node-id="I6063:42191;27105:115436;13415:57650" data-name="Atom / Story snippet">
+          <div className="h-[118px] relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57650;13415:54590" data-name="Image">
+            <div className="absolute border border-[rgba(0,0,0,0.05)] border-solid inset-[4px] rounded-[12px]" data-node-id="I6063:42191;27105:115436;13415:57650;13415:47288" data-name="image">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgImage2} />
+            </div>
+            <div className="absolute border-2 border-[var(--button\/primary,#196dff)] border-solid inset-0 rounded-[16px]" data-node-id="I6063:42191;27105:115436;13415:57650;13415:47291" data-name="border blue" />
+          </div>
+          <div className="content-stretch flex flex-col gap-[2px] items-center overflow-clip relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57650;13415:54600" data-name="Name + Date">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="I6063:42191;27105:115436;13415:57650;13415:57624" data-name="Highlight name">
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] text-center whitespace-nowrap" data-node-id="I6063:42191;27105:115436;13415:57650;13415:57626">
+                Наш интерьер
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0 w-[90px]" data-node-id="I6063:42191;27105:115436;13415:57661" data-name="Atom / Story snippet">
+          <div className="h-[118px] relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57661;13415:54590" data-name="Image">
+            <div className="absolute border border-[rgba(0,0,0,0.05)] border-solid inset-[4px] rounded-[12px]" data-node-id="I6063:42191;27105:115436;13415:57661;13415:47288" data-name="image">
+              <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[12px]">
+                <div className="absolute bg-[#bdd6e6] inset-0 rounded-[12px]" />
+                <img alt="" className="absolute max-w-none object-cover rounded-[12px] size-full" src={imgImage3} />
+                <img alt="" className="absolute max-w-none object-cover rounded-[12px] size-full" src={imgImage4} />
+                <img alt="" className="absolute max-w-none object-cover rounded-[12px] size-full" src={imgImage5} />
+              </div>
+            </div>
+            <div className="absolute border-2 border-[var(--button\/primary,#196dff)] border-solid inset-0 rounded-[16px]" data-node-id="I6063:42191;27105:115436;13415:57661;13415:47291" data-name="border blue" />
+          </div>
+          <div className="content-stretch flex flex-col gap-[2px] items-center overflow-clip relative shrink-0 w-full" data-node-id="I6063:42191;27105:115436;13415:57661;13415:54600" data-name="Name + Date">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0" data-node-id="I6063:42191;27105:115436;13415:57661;13415:57624" data-name="Highlight name">
+              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] text-center whitespace-nowrap" data-node-id="I6063:42191;27105:115436;13415:57661;13415:57626">
+                Коктейли
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 12 - Medium: Font(family: "fontFamily", style: Medium, size: 12, weight: 500, lineHeight: 14, letterSpacing: 0).
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

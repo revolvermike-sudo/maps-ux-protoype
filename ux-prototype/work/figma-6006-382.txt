@@ -1,0 +1,328 @@
+<section id="6006:382" name="Лента Яндекс Карт" x="-7244" y="-990" width="2606" height="2655">
+  <frame id="6007:15658" name="Main screen" x="101" y="1045" width="375" height="812">
+    <frame id="6007:15659" name="Map" x="0" y="0" width="375" height="812" />
+    <frame id="6007:15679" name="Tabbar+search" x="0" y="536" width="375" height="426.66668701171875">
+      <frame id="6007:15680" name="Bottom Search" x="0" y="0" width="375" height="128">
+        <frame id="6007:15681" name="Search" x="0" y="0" width="375" height="64">
+          <frame id="6007:15682" name="Input" x="16" y="16" width="279" height="48">
+            <frame id="6007:15683" name="Alise + Text" x="12" y="12" width="251" height="24">
+              <instance id="6007:15684" name="mic_24" x="0" y="0" width="24" height="24" />
+              <text id="6007:15685" name="Text" x="36" y="2" width="215" height="20" />
+            </frame>
+          </frame>
+          <instance id="6007:15686" name="Button" x="303" y="16" width="56" height="48" />
+        </frame>
+        <frame id="6007:15687" name="Search suggest" x="0" y="64" width="375" height="64">
+          <frame id="6007:15688" name="Suggest" x="12" y="12" width="351" height="40">
+            <instance id="6007:15689" name="Button" x="0" y="0" width="80" height="40" />
+            <instance id="6007:15690" name="Button" x="80" y="0" width="92" height="40" />
+            <instance id="6007:15691" name="Button" x="172" y="0" width="129" height="40" />
+            <instance id="6007:15692" name="Button" x="301" y="0" width="114" height="40" />
+          </frame>
+          <rounded-rectangle id="6007:15693" name="Gradient" x="327" y="0" width="48" height="64" />
+        </frame>
+        <instance id="6007:15694" name="drag_control_24" x="176" y="0" width="24" height="16" />
+      </frame>
+      <instance id="6007:15695" name="feed" x="0" y="128" width="375" height="984" hidden="true" />
+      <frame id="6007:15696" name="Frame 2136139977" x="0" y="128" width="375" height="298.66668701171875">
+        <frame id="6007:15697" name="Frame 2136139956" x="0" y="0" width="375" height="298.66668701171875">
+          <frame id="6007:15698" name="source" x="0" y="0" width="597" height="298.66668701171875">
+            <instance id="6007:15699" name="Preset" x="16" y="0" width="158" height="290.66668701171875" />
+            <instance id="6007:15700" name="Preset" x="182" y="0" width="158" height="290.66668701171875" />
+            <instance id="6007:15701" name="Preset" x="348" y="0" width="158" height="290.66668701171875" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <instance id="6007:16099" name="tab_bar_new" x="0" y="728" width="375" height="84" />
+  </frame>
+  <frame id="6007:16604" name="При развороте" x="605" y="1045" width="375" height="812">
+    <frame id="6007:16605" name="Feed" x="0" y="0" width="375" height="812" />
+    <frame id="6007:16667" name="actions" x="-0.328125" y="1816" width="375" height="112">
+      <instance id="6007:16668" name="Button" x="124" y="32" width="127" height="48" />
+    </frame>
+  </frame>
+  <frame id="6007:17523" name="При развороте — полная" x="1020" y="1045" width="375" height="812">
+    <frame id="6007:17524" name="Feed" x="0" y="0" width="375" height="812" />
+    <frame id="6007:17586" name="actions" x="0" y="1398" width="375" height="112">
+      <instance id="6007:17587" name="Button" x="124" y="32" width="127" height="48" />
+    </frame>
+  </frame>
+  <instance id="6039:33050" name="Preset" x="290" y="200" width="167.5" height="303.33331298828125" />
+  <instance id="6051:33273" name="button" x="516" y="200" width="40" height="40" />
+  <instance id="6051:33278" name="button" x="563" y="200" width="40" height="40" />
+  <frame id="6032:32377" name="При скролле" x="1511" y="1045" width="375" height="812">
+    <frame id="6032:32378" name="Feed" x="0" y="0" width="375" height="812" />
+    <frame id="6032:32442" name="actions" x="-0.328125" y="1816" width="375" height="112">
+      <instance id="6032:32443" name="Button" x="124" y="32" width="127" height="48" />
+    </frame>
+  </frame>
+  <symbol id="6028:26642" name="intents" x="101" y="100" width="375" height="64" />
+  <instance id="6039:33013" name="Preset" x="101" y="200" width="167.5" height="303.33331298828125" />
+  <frame id="6049:33193" name="Header — Search, intents" x="101" y="571" width="415" height="343">
+    <symbol id="6049:33192" name="State=Scrolling" x="20" y="195" width="375" height="128" />
+    <symbol id="6049:33191" name="State=Default" x="20" y="20" width="375" height="128" />
+  </frame>
+  <frame id="6051:33264" name="Frame 2131332415" x="516" y="1045" width="35.863956451416016" height="812">
+    <vector id="6051:33265" name="Arrow 1 (Stroke)" x="0" y="398.6359558105469" width="35.863956451416016" height="14.728067398071289" />
+  </frame>
+  <frame id="6051:33267" name="Frame 2147205223" x="1435" y="1045" width="35.863956451416016" height="812">
+    <vector id="6051:33268" name="Arrow 1 (Stroke)" x="0" y="398.6359558105469" width="35.863956451416016" height="14.728067398071289" />
+  </frame>
+  <frame id="6063:43059" name="Frame 2147205226" x="1939" y="1045" width="35.863956451416016" height="812">
+    <vector id="6063:43060" name="Arrow 1 (Stroke)" x="0" y="398.6359558105469" width="35.863956451416016" height="14.728067398071289" />
+  </frame>
+  <frame id="6063:42160" name="Карточка места" x="2076" y="1045" width="375" height="812">
+    <instance id="6063:42161" name="cardGalleryTop" x="0" y="0" width="375" height="224" />
+    <frame id="6063:42162" name="Frame 2087329129" x="0" y="224" width="375" height="96">
+      <instance id="6063:42163" name="cardShutter" x="0" y="0" width="375" height="64" />
+      <instance id="6063:42164" name="Rating" x="0" y="64" width="375" height="32" />
+    </frame>
+    <frame id="6063:42165" name="storyFrame" x="0" y="320" width="375" height="110">
+      <frame id="6063:42166" name="bodyFrame" x="16" y="8" width="343" height="94">
+        <text id="6063:42167" name="label" x="12" y="12" width="211" height="16" />
+        <text id="6063:42168" name="label" x="12" y="34" width="211" height="48" />
+        <frame id="6063:42169" name="image" x="286.41015625" y="-7.95703125" width="77.57281205058098" height="109.91442000865936">
+          <rounded-rectangle id="6063:42170" name="imageFrame" x="0" y="0" width="77.57281205058098" height="109.91442000865936" />
+        </frame>
+        <frame id="6063:42171" name="image" x="239" y="-4" width="64" height="102">
+          <rounded-rectangle id="6063:42172" name="imageFrame" x="0" y="0" width="64" height="102" />
+          <rounded-rectangle id="6063:42173" name="overlay" x="0" y="0" width="64" height="102" />
+          <instance id="6063:42174" name="play_24" x="20" y="39" width="24" height="24" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="6063:42175" name="social" x="0" y="430" width="375" height="40" />
+    <instance id="6063:42176" name="cardHoursDistance" x="0" y="470" width="375" height="32" />
+    <frame id="6063:42177" name="cardTabs" x="0" y="502" width="375" height="56">
+      <frame id="6063:42178" name="mask" x="0" y="0" width="375" height="56">
+        <rounded-rectangle id="6063:42179" name="mask" x="0" y="0" width="343" height="56" />
+        <rounded-rectangle id="6063:42180" name="fade" x="343" y="0" width="32" height="56" />
+      </frame>
+      <instance id="6063:42181" name="-tabs" x="16" y="8" width="43" height="40" />
+      <instance id="6063:42182" name="-tabs" x="83" y="8" width="40" height="40" />
+      <instance id="6063:42183" name="-tabs" x="147" y="8" width="72" height="40" />
+      <instance id="6063:42184" name="-tabs" x="243" y="8" width="90" height="40" />
+      <instance id="6063:42185" name="-tabs" x="357" y="8" width="80" height="40" />
+      <instance id="6063:42186" name="-tabs" x="461" y="8" width="89" height="40" />
+      <instance id="6063:42187" name="-tabs" x="574" y="8" width="102" height="40" />
+    </frame>
+    <instance id="6063:42188" name="Spacer" x="0" y="558" width="375" height="1" />
+    <instance id="6063:42189" name="mdl_reserved" x="0" y="559" width="375" height="120" />
+    <instance id="6063:42190" name="Spacer" x="0" y="679" width="375" height="1" />
+    <instance id="6063:42191" name="storiesFrame" x="0" y="680" width="375" height="178" />
+    <instance id="6063:42192" name="Spacer" x="0" y="858" width="375" height="1" />
+    <frame id="6063:42193" name="Frame 2087329127" x="0" y="859" width="375" height="308">
+      <frame id="6063:42194" name="Frame 2087329127" x="0" y="0" width="375" height="308">
+        <instance id="6063:42195" name="Menu" x="0" y="0" width="375" height="244" />
+        <instance id="6063:42196" name="Action buttons : 48" x="0" y="244" width="375" height="64" />
+      </frame>
+    </frame>
+    <instance id="6063:42197" name="Spacer" x="0" y="1167" width="375" height="1" />
+    <instance id="6063:42198" name="Spacer" x="0" y="1168" width="375" height="1" />
+    <instance id="6063:42199" name="Action List Item" x="0" y="1169" width="375" height="56" />
+    <instance id="6063:42200" name="Spacer" x="0" y="1225" width="375" height="1" />
+    <instance id="6063:42201" name="Pano + Photo + Map" x="0" y="1226" width="375" height="124" />
+    <instance id="6063:42202" name="Spacer" x="0" y="1350" width="375" height="1" />
+    <frame id="6063:42203" name="Frame 2087329264" x="0" y="1351" width="375" height="692">
+      <instance id="6063:42204" name="Address" x="0" y="0" width="375" height="124" />
+      <instance id="6063:42205" name="Contacts" x="0" y="124" width="375" height="188" />
+      <instance id="6063:42206" name="Time" x="0" y="312" width="375" height="84" />
+      <instance id="6063:42207" name="Action buttons : 48" x="0" y="396" width="375" height="80" />
+      <frame id="6063:42208" name="Transit" x="0" y="476" width="375" height="216">
+        <instance id="6063:42209" name="List Item (old)" x="0" y="8" width="375" height="40" />
+        <frame id="6063:42210" name="Icon + Txt + Link + Arrow" x="0" y="48" width="375" height="56">
+          <instance id="6063:42211" name="dropdown" x="351" y="24" width="8" height="8" />
+          <text id="6063:42212" name="value" x="335" y="20" width="8" height="16" />
+          <frame id="6063:42213" name="Text + Link" x="56" y="20" width="190" height="16">
+            <text id="6063:42214" name="text" x="0" y="0" width="131" height="16" />
+            <frame id="6063:42215" name="Link" x="135" y="0" width="55" height="16">
+              <instance id="6063:42216" name="pedestrian_16" x="0" y="0" width="16" height="16" />
+              <text id="6063:42217" name="text" x="17" y="0" width="38" height="16" />
+            </frame>
+          </frame>
+          <instance id="6063:42218" name="metro_stop_24" x="16" y="16" width="24" height="24" />
+        </frame>
+        <instance id="6063:42219" name="Icon + Txt + Link + Arrow" x="0" y="104" width="375" height="56" />
+        <instance id="6063:42220" name="Action List Item" x="0" y="160" width="375" height="56" hidden="true" />
+        <instance id="6063:42221" name="Action List Item" x="0" y="216" width="375" height="56" hidden="true" />
+        <instance id="6063:42222" name="Action List Item" x="0" y="160" width="375" height="56" />
+      </frame>
+    </frame>
+    <instance id="6063:42223" name="Spacer" x="0" y="2043" width="375" height="1" />
+    <instance id="6063:42224" name="Ammenities" x="0" y="2044" width="375" height="228" />
+    <instance id="6063:42225" name="Spacer" x="0" y="2272" width="375" height="1" />
+    <frame id="6063:42226" name="Frame 2087329140" x="0" y="2273" width="375" height="188">
+      <instance id="6063:42227" name="list_item" x="0" y="0" width="375" height="56" />
+      <frame id="6063:42228" name="Frame 2087329138" x="0" y="56" width="375" height="72">
+        <frame id="6063:42229" name="Ads" x="0" y="0" width="375" height="72">
+          <frame id="6063:42230" name="Frame 1171276192" x="16" y="16" width="343" height="40">
+            <instance id="6063:42231" name="mark_actual_24_day" x="0" y="8" width="24" height="24" />
+            <frame id="6063:42232" name="Frame 2087329113" x="40" y="0" width="271" height="40">
+              <text id="6063:42233" name="text" x="0" y="0" width="271" height="40" />
+            </frame>
+            <frame id="6063:42234" name="Frame 1171276193" x="327" y="6" width="16" height="28">
+              <instance id="6063:42235" name="arrow_down_8" x="4" y="10" width="8" height="8" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="6063:42236" name="Frame 2087329139" x="0" y="128" width="375" height="60">
+        <frame id="6063:42237" name="Ads" x="0" y="0" width="375" height="60">
+          <frame id="6063:42238" name="Frame 1171276192" x="16" y="16" width="343" height="28">
+            <instance id="6063:42239" name="mark_priority_24_day_flip" x="0" y="2" width="24" height="24" />
+            <frame id="6063:42240" name="Frame 2087329113" x="40" y="4" width="271" height="20">
+              <text id="6063:42241" name="text" x="0" y="0" width="271" height="20" />
+            </frame>
+            <frame id="6063:42242" name="Frame 1171276193" x="327" y="0" width="16" height="28">
+              <instance id="6063:42243" name="arrow_down_8" x="4" y="10" width="8" height="8" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <instance id="6063:42244" name="Spacer" x="0" y="2461" width="375" height="1" />
+    <frame id="6063:42245" name="Gallery" x="0" y="2462" width="375" height="284">
+      <instance id="6063:42246" name="Atom / Gallery (Regular 4+)" x="0" y="16" width="375" height="188" />
+      <instance id="6063:42247" name="Action buttons : 48" x="0" y="204" width="375" height="80" />
+    </frame>
+    <instance id="6063:42248" name="Spacer" x="0" y="2746" width="375" height="1" />
+    <frame id="6063:42249" name="Collection" x="0" y="2747" width="375" height="460">
+      <instance id="6063:42250" name="List Item (old)" x="16" y="8" width="343" height="40" />
+      <frame id="6063:42251" name="Frame 2087329117" x="16" y="52" width="343" height="392">
+        <frame id="6063:42252" name="Frame 1171276186" x="0" y="0" width="343" height="224">
+          <frame id="6063:42253" name="Frame 431" x="0" y="0" width="343" height="224">
+            <frame id="6063:42254" name="Frame 73" x="0" y="0" width="343" height="148">
+              <rounded-rectangle id="6063:42255" name="Rectangle 4623" x="0" y="0" width="343" height="148" />
+              <frame id="6063:42256" name="Frame 451" x="16" y="16" width="58" height="24" hidden="true">
+                <text id="6063:42257" name="Новая" x="8" y="4" width="42" height="16" />
+              </frame>
+              <frame id="6063:42258" name="Frame 1171276191" x="16" y="112" width="311" height="24">
+                <text id="6063:42259" name="Text" x="0" y="4" width="311" height="16" />
+                <instance id="6063:42260" name="bookmark_24" x="287" y="0" width="24" height="24" hidden="true" />
+              </frame>
+            </frame>
+            <frame id="6063:42261" name="Frame 429" x="0" y="148" width="343" height="76">
+              <text id="6063:42262" name="Где поесть борщ в Москве?" x="16" y="16" width="311" height="20" />
+              <frame id="6063:42263" name="Frame 1171276173" x="16" y="44" width="121.24169158935547" height="16">
+                <frame id="6063:42264" name="Frame 420" x="0" y="0" width="121.24169158935547" height="16">
+                  <frame id="6063:42265" name="Frame 421" x="0" y="0" width="16" height="16">
+                    <instance id="6063:42266" name="logo_maps_24_day_web" x="2" y="2" width="12" height="12" />
+                  </frame>
+                  <text id="6063:42267" name="Text" x="24" y="0" width="93" height="16" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="6063:42268" name="Frame 2087329116" x="0" y="240" width="343" height="152">
+          <frame id="6063:42269" name="List Item (old)" x="0" y="0" width="343" height="72">
+            <instance id="6063:42270" name="reservation_24" x="0" y="24" width="24" height="24" />
+            <frame id="6063:42271" name="Text" x="40" y="8" width="279" height="56">
+              <text id="6063:42272" name="Text" x="0" y="2" width="279" height="16" />
+              <text id="6063:42273" name="Text" x="0" y="22" width="279" height="32" />
+            </frame>
+            <frame id="6063:42274" name="Value" x="335" y="24" width="8" height="24">
+              <instance id="6063:42275" name="arrow_right_8_flip" x="0" y="8" width="8" height="8" />
+            </frame>
+          </frame>
+          <instance id="6063:42276" name="List Item (old)" x="0" y="72" width="343" height="40" />
+          <instance id="6063:42277" name="List Item (old)" x="0" y="112" width="343" height="40" />
+        </frame>
+      </frame>
+    </frame>
+    <instance id="6063:42278" name="Spacer" x="0" y="3207" width="375" height="1" />
+    <instance id="6063:42279" name="Commitment" x="0" y="3208" width="375" height="286" />
+    <instance id="6063:42280" name="Spacer" x="0" y="3494" width="375" height="1" />
+    <instance id="6063:42281" name="Award" x="0" y="3495" width="375" height="232" />
+    <instance id="6063:42282" name="Spacer" x="0" y="3727" width="375" height="1" />
+    <instance id="6063:42283" name="Rating" x="0" y="3728" width="375" height="299" />
+    <instance id="6063:42284" name="Spacer" x="0" y="4027" width="375" height="1" />
+    <frame id="6063:42285" name="Reviews" x="0" y="4028" width="375" height="824">
+      <instance id="6063:42286" name="Spacer" x="0" y="0" width="375" height="8" />
+      <instance id="6063:42287" name="List Item (old)" x="0" y="8" width="375" height="40" />
+      <instance id="6063:42288" name="Aspects" x="0" y="48" width="375" height="72" />
+      <frame id="6063:42289" name="All Users/ — Without photo / Day" x="0" y="120" width="375" height="276">
+        <instance id="6063:42290" name="unit / element / 1px ————" x="18" y="0" width="341" height="1" hidden="true" />
+        <frame id="6063:42291" name="Frame 2087326258" x="16" y="16" width="343" height="40">
+          <frame id="6063:42292" name="Frame 2087326259" x="0" y="0" width="216" height="40">
+            <instance id="6063:42293" name="avatar_40" x="0" y="0" width="40" height="40" />
+            <frame id="6063:42294" name="Frame 2087326257" x="52" y="2" width="164" height="36">
+              <text id="6063:42295" name="Илья Л." x="0" y="0" width="164" height="20" />
+              <text id="6063:42296" name="Знаток города 12 уро" x="0" y="22" width="164" height="14" />
+            </frame>
+          </frame>
+          <instance id="6063:42297" name="Button" x="232" y="4" width="111" height="32" />
+        </frame>
+        <frame id="6063:42298" name="Frame 2087326260" x="16" y="72" width="343" height="188">
+          <frame id="6063:42299" name="Rating" x="0" y="0" width="164" height="16">
+            <frame id="6063:42300" name="Stars Rating (Day)" x="0" y="0" width="80" height="16">
+              <instance id="6063:42301" name="place_rating_16" x="0" y="0" width="16" height="16" />
+              <instance id="6063:42302" name="place_rating_16" x="16" y="0" width="16" height="16" />
+              <instance id="6063:42303" name="place_rating_16" x="32" y="0" width="16" height="16" />
+              <instance id="6063:42304" name="place_rating_16" x="48" y="0" width="16" height="16" />
+              <instance id="6063:42305" name="place_rating_16" x="64" y="0" width="16" height="16" />
+            </frame>
+            <text id="6063:42306" name="2 дня назад" x="88" y="0" width="76" height="16" />
+          </frame>
+          <text id="6063:42307" name="Достойный ресторан д" x="0" y="24" width="343" height="80" />
+          <instance id="6063:42308" name="actionFrame" x="0" y="112" width="343" height="36" />
+          <frame id="6063:42309" name="Frame 2087326261" x="0" y="156" width="343" height="32">
+            <text id="6063:42310" name="— Посмотреть ответ организации" x="0" y="6.5" width="258" height="19" />
+          </frame>
+        </frame>
+        <instance id="6063:42311" name="unit / element / 1px ————" x="18" y="183" width="341" height="1" hidden="true" />
+      </frame>
+      <frame id="6063:42312" name="All Users/ — Without photo / Day" x="0" y="396" width="375" height="364">
+        <instance id="6063:42313" name="unit / element / 1px ————" x="18" y="0" width="341" height="1" hidden="true" />
+        <frame id="6063:42314" name="Frame 2087326258" x="16" y="16" width="343" height="40">
+          <frame id="6063:42315" name="Frame 2087326259" x="0" y="0" width="216" height="40">
+            <instance id="6063:42316" name="avatar_40" x="0" y="0" width="40" height="40" />
+            <frame id="6063:42317" name="Frame 2087326257" x="52" y="2" width="164" height="36">
+              <text id="6063:42318" name="Илья Л." x="0" y="0" width="164" height="20" />
+              <text id="6063:42319" name="Знаток города 12 уро" x="0" y="22" width="164" height="14" />
+            </frame>
+          </frame>
+          <instance id="6063:42320" name="Button" x="232" y="4" width="111" height="32" />
+        </frame>
+        <frame id="6063:42321" name="Frame 2087326260" x="16" y="72" width="343" height="276">
+          <frame id="6063:42322" name="Rating" x="0" y="0" width="164" height="16">
+            <frame id="6063:42323" name="Stars Rating (Day)" x="0" y="0" width="80" height="16">
+              <instance id="6063:42324" name="place_rating_16" x="0" y="0" width="16" height="16" />
+              <instance id="6063:42325" name="place_rating_16" x="16" y="0" width="16" height="16" />
+              <instance id="6063:42326" name="place_rating_16" x="32" y="0" width="16" height="16" />
+              <instance id="6063:42327" name="place_rating_16" x="48" y="0" width="16" height="16" />
+              <instance id="6063:42328" name="place_rating_16" x="64" y="0" width="16" height="16" />
+            </frame>
+            <text id="6063:42329" name="2 дня назад" x="88" y="0" width="76" height="16" />
+          </frame>
+          <text id="6063:42330" name="Достойный ресторан д" x="0" y="24" width="343" height="80" />
+          <frame id="6063:42331" name="user_photo" x="0" y="112" width="343" height="80">
+            <frame id="6063:42332" name="Photo 1" x="0" y="4" width="72" height="72">
+              <rounded-rectangle id="6063:42333" name="Form" x="0" y="4" width="72" height="72" />
+              <frame id="6063:42334" name="Images / photo / pic-3" x="0" y="4" width="72" height="72">
+                <rounded-rectangle id="6063:42335" name="Rectangle" x="0" y="0" width="72" height="72" />
+              </frame>
+            </frame>
+            <frame id="6063:42336" name="Photo 2" x="80" y="0" width="72" height="72" hidden="true">
+              <rounded-rectangle id="6063:42337" name="Form" x="80" y="0" width="72" height="72" />
+              <frame id="6063:42338" name="Images / photo / pic-3" x="80" y="0" width="72" height="72">
+                <rounded-rectangle id="6063:42339" name="Rectangle" x="0" y="0" width="72" height="72" />
+              </frame>
+            </frame>
+          </frame>
+          <instance id="6063:42340" name="actionFrame" x="0" y="200" width="343" height="36" />
+          <frame id="6063:42341" name="Frame 2087326261" x="0" y="244" width="343" height="32">
+            <text id="6063:42342" name="— Посмотреть ответ организации" x="0" y="6.5" width="258" height="19" />
+          </frame>
+        </frame>
+        <instance id="6063:42343" name="unit / element / 1px ————" x="18" y="183" width="341" height="1" hidden="true" />
+      </frame>
+      <instance id="6063:42344" name="List Item (old)" x="0" y="760" width="375" height="56" />
+      <instance id="6063:42345" name="Spacer" x="0" y="816" width="375" height="8" />
+    </frame>
+    <instance id="6063:42346" name="Status Bar" x="0" y="0" width="375" height="50" />
+  </frame>
+</section>
+
+IMPORTANT: The user has selected a section node, so you have received a sparse metadata response. You MUST call get_design_context on the nodes or their sublayers individually based on their IDs to implement the design.

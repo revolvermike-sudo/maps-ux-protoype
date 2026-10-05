@@ -1,0 +1,67 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/ab215c6a-af76-46ac-a77b-a064965e602b";
+const imgCar16 = `${assetPathPrefix}/03603.svg`;
+
+type HoursMapsProps = {
+  className?: string;
+  type?: "open";
+};
+
+function HoursMaps({ className, type = "open" }: HoursMapsProps) {
+  return (
+    <div className={className || "content-stretch flex items-start relative w-[220px]"} data-node-id="6063:33725">
+      <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] min-w-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis whitespace-nowrap" data-node-id="6063:33726">
+        Открыто до 00:00
+      </p>
+    </div>
+  );
+}
+
+type CardHoursDistanceProps = {
+  className?: string;
+  mode?: "maps";
+  type?: "org";
+};
+
+function CardHoursDistance({ className, mode = "maps", type = "org" }: CardHoursDistanceProps) {
+  return (
+    <div className={className || "bg-[var(--bg\\/primary,white)] content-stretch flex gap-[8px] items-start overflow-clip px-[16px] py-[8px] relative w-[375px]"} data-node-id="6063:33781">
+      <HoursMaps className="content-stretch flex flex-[1_0_0] items-start min-w-px relative" />
+      <div className="content-stretch flex gap-[3px] items-start relative shrink-0" data-node-id="6063:33783" data-name="-etaDistanceMaps">
+        <div className="content-stretch flex gap-[5px] items-start relative shrink-0" data-node-id="I6063:33783;32269:133549" data-name="etaFrame">
+          <div className="relative shrink-0 size-[16px]" data-node-id="I6063:33783;32269:133546" data-name="car_16">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCar16} />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex gap-[3px] items-start leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] text-right whitespace-nowrap" data-node-id="I6063:33783;32269:133559" data-name="labelFrame">
+            <p className="font-[family-name:var(--fontfamily,'YS_Text:Medium')] relative shrink-0" data-node-id="I6063:33783;32269:133537">
+              10 мин
+            </p>
+            <p className="font-[family-name:var(--fontfamily,'YS_Text:Regular')] relative shrink-0" data-node-id="I6063:33783;32269:133541">
+              ·
+            </p>
+          </div>
+        </div>
+        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#878787)] text-right whitespace-nowrap" data-node-id="I6063:33783;32269:133540">
+          2 км
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function CardHoursDistance1() {
+  return <CardHoursDistance className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[8px] items-start px-[16px] py-[8px] relative size-full" />;
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Size 14 - Regular: Font(family: "fontFamily", style: Regular, size: 14, weight: 400, lineHeight: 16, letterSpacing: 0).
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

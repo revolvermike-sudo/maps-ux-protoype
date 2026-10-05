@@ -1,0 +1,73 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/ff01aa25-9f9e-43dc-987a-e2f174f3b541";
+const imgImage1 = `${assetPathPrefix}/28198.png`;
+const imgImage2 = `${assetPathPrefix}/8562e.png`;
+const imgImage = `${assetPathPrefix}/e2c13.svg`;
+const imgPhoto24 = `${assetPathPrefix}/fc0b0.svg`;
+
+type GalleryPaginatorProps = {
+  className?: string;
+  state?: "future" | "current";
+};
+
+function GalleryPaginator({ className, state = "future" }: GalleryPaginatorProps) {
+  const isCurrent = state === "current";
+  return (
+    <div className={className || `bg-[rgba(255,255,255,0.5)] h-[2px] overflow-clip relative rounded-[10px] w-[32px] ${isCurrent ? "content-stretch flex items-start" : ""}`} id={isCurrent ? "node-6063_33600" : "node-6063_33599"}>
+      {isCurrent && (
+        <>
+          <div className="bg-[var(--white,white)] flex-[1_0_0] h-full min-w-px relative" data-node-id="6063:33601" data-name="shape" />
+          <div className="bg-[var(--white,white)] flex-[1_0_0] h-full min-w-px opacity-0 relative" data-node-id="6063:33602" data-name="shape" />
+        </>
+      )}
+    </div>
+  );
+}
+
+export default function CardGalleryTop() {
+  return (
+    <div className="bg-[var(--bg\/separator,#ebebeb)] relative size-full" data-node-id="6063:42161" data-name="cardGalleryTop">
+      <div className="absolute inset-[0_0_-16px_0] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[100%_100%]" data-node-id="I6063:42161;32321:15359" style={{ maskImage: `url("${imgImage}")` }} data-name="image">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage1} />
+      </div>
+      <div className="absolute bottom-[14px] content-stretch flex gap-[2px] h-[2px] items-start left-[16px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-16px_-208px] mask-size-[calc(100%+32px)_240px] right-[16px]" data-node-id="I6063:42161;32321:15366" style={{ maskImage: `url("${imgImage}")` }} data-name="galleryPaginator">
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] content-stretch flex flex-[1_0_0] h-full items-start min-w-px overflow-clip relative rounded-[10px]" state="current" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+        <GalleryPaginator className="bg-[rgba(255,255,255,0.5)] flex-[1_0_0] h-full min-w-px relative rounded-[10px]" />
+      </div>
+      <div className="absolute bottom-[32px] content-stretch flex gap-[4px] items-center mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-307px_-168px] mask-size-[375px_240px] right-[16px]" data-node-id="I6063:42161;32321:15381" style={{ maskImage: `url("${imgImage}")` }} data-name="galleryCounter">
+        <div className="relative shrink-0 size-[24px]" data-node-id="I6063:42161;32321:15382" data-name="photo_24">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPhoto24} />
+        </div>
+        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[16px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/color-bg,white)] text-right whitespace-nowrap" data-node-id="I6063:42161;32321:15383">
+          425
+        </p>
+      </div>
+      <div className="absolute bottom-[32px] content-stretch flex items-center justify-center left-[16px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-16px_-120px] mask-size-[375px_240px] overflow-clip rounded-[12px]" data-node-id="I6063:42161;32321:15362" style={{ maskImage: `url("${imgImage}")` }} data-name="logoFrame">
+        <div className="relative shrink-0 size-[72px]" data-node-id="I6063:42161;32321:15363" data-name="image">
+          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage2} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0).
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

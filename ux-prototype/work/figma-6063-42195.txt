@@ -1,0 +1,92 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/2d082c8d-c859-4f26-8446-f0ba5a47393b";
+const imgPhoto = `${assetPathPrefix}/978a6.png`;
+const imgPhoto1 = `${assetPathPrefix}/26853.png`;
+const imgPhoto2 = `${assetPathPrefix}/b0376.png`;
+
+export default function Menu() {
+  return (
+    <div className="bg-[var(--bg\/primary,white)] content-stretch flex flex-col items-start relative size-full" data-node-id="6063:42195" data-name="Menu">
+      <div className="bg-[var(--bg\/primary,white)] h-[8px] relative shrink-0 w-full" data-node-id="I6063:42195;27022:109100" data-name="Spacer" />
+      <div className="bg-[var(--bg\/primary,white)] content-stretch flex gap-[8px] items-center px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="I6063:42195;27022:117525" data-name="List Item (old)">
+        <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-center min-w-px py-[2px] relative" data-node-id="I6063:42195;27022:117525;12254:6269" data-name="Text">
+          <p className="[word-break:break-word] font-['YS_Text:Medium'] leading-[20px] not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary,black)] w-full" data-node-id="I6063:42195;27022:117525;12254:6270">
+            Меню
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col h-[24px] items-start justify-center py-[2px] relative shrink-0 w-[72px]" data-node-id="I6063:42195;27022:117525;12251:4267" data-name="Value" />
+      </div>
+      <div className="content-stretch flex gap-[16px] items-start pl-[16px] py-[8px] relative shrink-0 w-[375px]" data-node-id="I6063:42195;27022:121919" data-name="Carousel">
+        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0" data-node-id="I6063:42195;2015:1123" data-name="Menu / Carousel Card">
+          <div className="border-[0.5px] border-[rgba(0,0,0,0.04)] border-solid relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 size-[120px]" data-node-id="I6063:42195;2015:1123;2015:703" data-name="Photo">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--corner-radius\/12pt-\(m\),12px)] size-full" src={imgPhoto} />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Regular')] gap-[4px] items-start leading-[16px] not-italic overflow-clip relative shrink-0 text-[14px] w-full" data-node-id="I6063:42195;2015:1123;7819:29092" data-name="Text">
+            <p className="min-w-full overflow-hidden relative shrink-0 text-[color:var(--text\/primary,black)] text-ellipsis w-[min-content]" data-node-id="I6063:42195;2015:1123;2015:701">
+              Заголовок в две строки
+            </p>
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="I6063:42195;2015:1123;7819:29021" data-name="Price">
+              <p className="relative shrink-0 text-[color:var(--text\/primary,black)]" data-node-id="I6063:42195;2015:1123;2015:702">
+                1200 ₽
+              </p>
+              <p className="relative shrink-0 text-[color:var(--text\/secondary,#878787)]" data-node-id="I6063:42195;2015:1123;7819:28862">{` · 500 г`}</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0" data-node-id="I6063:42195;7819:29177" data-name="Menu / Carousel Card">
+          <div className="border-[0.5px] border-[rgba(0,0,0,0.04)] border-solid relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 size-[120px]" data-node-id="I6063:42195;7819:29177;2015:703" data-name="Photo">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--corner-radius\/12pt-\(m\),12px)] size-full" src={imgPhoto1} />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Regular')] gap-[4px] items-start leading-[16px] not-italic overflow-clip relative shrink-0 text-[14px] w-full" data-node-id="I6063:42195;7819:29177;7819:29092" data-name="Text">
+            <p className="min-w-full overflow-hidden relative shrink-0 text-[color:var(--text\/primary,black)] text-ellipsis w-[min-content]" data-node-id="I6063:42195;7819:29177;2015:701">
+              Заголовок в две строки
+            </p>
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="I6063:42195;7819:29177;7819:29021" data-name="Price">
+              <p className="relative shrink-0 text-[color:var(--text\/primary,black)]" data-node-id="I6063:42195;7819:29177;2015:702">
+                1200 ₽
+              </p>
+              <p className="relative shrink-0 text-[color:var(--text\/secondary,#878787)]" data-node-id="I6063:42195;7819:29177;7819:28862">{` · 500 г`}</p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0" data-node-id="I6063:42195;7819:29418" data-name="Menu / Carousel Card">
+          <div className="border-[0.5px] border-[rgba(0,0,0,0.04)] border-solid relative rounded-[var(--corner-radius\/12pt-\(m\),12px)] shrink-0 size-[120px]" data-node-id="I6063:42195;7819:29418;2015:703" data-name="Photo">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--corner-radius\/12pt-\(m\),12px)] size-full" src={imgPhoto2} />
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Regular')] gap-[4px] items-start leading-[16px] not-italic overflow-clip relative shrink-0 text-[14px] w-full" data-node-id="I6063:42195;7819:29418;7819:29092" data-name="Text">
+            <p className="min-w-full overflow-hidden relative shrink-0 text-[color:var(--text\/primary,black)] text-ellipsis w-[min-content]" data-node-id="I6063:42195;7819:29418;2015:701">
+              Заголовок в две строки
+            </p>
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0 whitespace-nowrap" data-node-id="I6063:42195;7819:29418;7819:29021" data-name="Price">
+              <p className="relative shrink-0 text-[color:var(--text\/primary,black)]" data-node-id="I6063:42195;7819:29418;2015:702">
+                1200 ₽
+              </p>
+              <p className="relative shrink-0 text-[color:var(--text\/secondary,#878787)]" data-node-id="I6063:42195;7819:29418;7819:28862">{` · 500 г`}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Size 16 - Medium: Font(family: "fontFamily", style: Medium, size: 16, weight: 400, lineHeight: 20, letterSpacing: 0), Size 14 - Regular: Font(family: "fontFamily", style: Regular, size: 14, weight: 400, lineHeight: 16, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## List Item (old)
+**Node ID:** 6063:36609
+
+**Documentation:**
+- [https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralItem/GeneralItemViewModelFactory.swift](https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralItem/GeneralItemViewModelFactory.swift)
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

@@ -1,0 +1,788 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/59ccafc7-9cea-42ae-842f-7692a4b4cea5";
+const img14RubricsLandmark14 = `${assetPathPrefix}/826bd.svg`;
+const imgSun = `${assetPathPrefix}/1e00f.svg`;
+const imgFeed = `${assetPathPrefix}/a2a85.png`;
+const imgPicture = `${assetPathPrefix}/21d75.png`;
+const imgPicture1 = `${assetPathPrefix}/2b3ca.png`;
+const imgPicture2 = `${assetPathPrefix}/f619d.png`;
+const imgPicture3 = `${assetPathPrefix}/23d1b.png`;
+const imgPicture4 = `${assetPathPrefix}/c3c46.png`;
+const imgPicture5 = `${assetPathPrefix}/cea08.png`;
+const imgPicture6 = `${assetPathPrefix}/bd40b.png`;
+const imgSigns = `${assetPathPrefix}/610a3.svg`;
+const imgMyGeo = `${assetPathPrefix}/ff0bd.svg`;
+const img14RubricsLandmark15 = `${assetPathPrefix}/61dfc.svg`;
+
+type GoogleTileProps = {
+  className?: string;
+  size?: "M" | "L";
+};
+
+function GoogleTile({ className, size = "M" }: GoogleTileProps) {
+  const isL = size === "L";
+  return (
+    <div className={className || `${String.raw`bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] `}${isL ? "h-[422px] w-[290px]" : "h-[427px] w-[245px]"}`} id={isL ? "node-6023_19368" : "node-6023_19366"}>
+      <div className="bg-[#a7a7a7] h-[244px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-full" id={isL ? "node-6023_19369" : "node-6023_19353"} data-name="Picture" />
+      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" id={isL ? "node-6023_19370" : "node-6023_19313"} data-name="Contens">
+        <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" id={isL ? "node-6023_19371" : "node-6023_19314"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+          <p className="leading-[18px]">Tagliatella Caffé</p>
+        </div>
+        <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" id={isL ? "node-6023_19372" : "node-6023_19315"} data-name="Meta">
+          <div className="content-stretch flex gap-[4px] items-start relative shrink-0" id={isL ? "node-6023_19373" : "node-6023_19316"} data-name="Meta">
+            <div className="content-stretch flex gap-[2px] items-center relative shrink-0" id={isL ? "node-6023_19374" : "node-6023_19317"} data-name="Rating, reviews">
+              <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" id={isL ? "node-6023_19375" : "node-6023_19318"} data-name="1 slot">
+                <div className="relative shrink-0 size-[12px]" id={isL ? "node-I6023_19375-673_16619" : "node-I6023_19318-673_16619"} data-name="14 / rubrics_restaurants_14">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark14} />
+                </div>
+                <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" id={isL ? "node-I6023_19375-673_16620" : "node-I6023_19318-673_16620"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                  5,0
+                </p>
+              </div>
+              <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19376" : "node-6023_19319"} data-name="Reviews">
+                <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19377" : "node-6023_19320"} data-name="Rating, reviews">
+                  <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-6023_19378" : "node-6023_19321"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    (12 013)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] items-center relative shrink-0" id={isL ? "node-6023_19382" : "node-6023_19325"} data-name="2nd slot">
+            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-6023_19383" : "node-6023_19326"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+              ·
+            </p>
+            <div className="content-stretch flex items-center relative shrink-0 w-[55px]" id={isL ? "node-6023_19384" : "node-6023_19327"} data-name="2 slot">
+              <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-I6023_19384-685_12798" : "node-I6023_19327-685_12798"}>
+                <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-I6023_19384-685_12799" : "node-I6023_19327-685_12799"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                  от 2500 ₽
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" id={isL ? "node-6023_19385" : "node-6023_19328"} data-name="2nd slot">
+            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-6023_19386" : "node-6023_19329"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+              ·
+            </p>
+            <div className="content-stretch flex items-center relative shrink-0 w-[55px]" id={isL ? "node-6023_19387" : "node-6023_19330"} data-name="2 slot">
+              <div className="content-stretch flex items-center relative shrink-0 w-[55px]" id={isL ? "node-I6023_19387-685_12798" : "node-I6023_19330-685_12798"}>
+                <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" id={isL ? "node-I6023_19387-685_12799" : "node-I6023_19330-685_12799"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                  Ресторан
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" id={isL ? "node-6023_19388" : "node-6023_19331"} data-name="Meta">
+          <div className="content-stretch flex gap-[4px] items-start relative shrink-0" id={isL ? "node-6023_19389" : "node-6023_19332"} data-name="Meta">
+            <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19390" : "node-6023_19333"} data-name="Rating, reviews">
+              <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19391" : "node-6023_19334"} data-name="Reviews">
+                <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19392" : "node-6023_19335"} data-name="Rating, reviews">
+                  <p className={`[word-break:break-word] font-[family-name:var(--fontfamily,"YS_Text:Medium")] leading-[14px] not-italic relative shrink-0 text-[12px] whitespace-nowrap ${isL ? String.raw`text-[color:var(--text\/special\/success,#3bb300)]` : String.raw`text-[color:var(--text\/special\/alert,#f43)]`}`} id={isL ? "node-6023_19393" : "node-6023_19336"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    {isL ? "Открыто" : "Закрыто"}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] items-center relative shrink-0" id={isL ? "node-6023_19397" : "node-6023_19340"} data-name="2nd slot">
+            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-6023_19398" : "node-6023_19341"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+              ·
+            </p>
+            <div className="content-stretch flex items-center relative shrink-0 w-[55px]" id={isL ? "node-6023_19399" : "node-6023_19361"} data-name="2 slot">
+              <div className="content-stretch flex items-center relative shrink-0" id={isL ? "node-6023_19400" : "node-6023_19362"}>
+                <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" id={isL ? "node-6023_19401" : "node-6023_19363"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                  {isL ? "Закроется в 17:00" : "Откроется в 8:00"}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" id={isL ? "node-6023_19402" : "node-6023_19343"} style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+          Знаменитый ресторан северной кухни в центре Москвы
+        </p>
+      </div>
+    </div>
+  );
+}
+
+type HeaderNewProps = {
+  className?: string;
+  state?: "Default";
+};
+
+function HeaderNew({ className, state = "Default" }: HeaderNewProps) {
+  return (
+    <div className={className || "bg-[var(--bg\\/surface,white)] content-stretch flex flex-col items-start relative w-[375px]"} data-node-id="6028:28121">
+      <div className="content-stretch flex flex-col items-center justify-end pb-[var(--padding\/00pt-\(null\),0px)] pt-[var(--padding\/04pt-\(xss\),4px)] relative shrink-0 w-full" data-node-id="6028:28093" data-name="Grabber">
+        <div className="bg-[var(--icons\/additional,#ccc)] h-[4px] relative rounded-[100px] shrink-0 w-[32px]" data-node-id="6028:28094" data-name="Line" />
+      </div>
+      <div className="content-stretch flex flex-col items-start justify-center pb-[12px] pt-[var(--padding\/08pt-\(s\),8px)] relative shrink-0 w-full" data-node-id="6028:28095">
+        <div className="content-stretch flex flex-col items-center px-[var(--space\/16px-·-400,16px)] relative shrink-0 w-full" data-node-id="6028:28096">
+          <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-node-id="6028:28097">
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start justify-center min-w-px py-[var(--padding\/00pt-\(null\),0px)] relative" data-node-id="6028:28098">
+              <div className="content-stretch flex flex-col gap-[2px] items-start relative shrink-0 w-full" data-node-id="6028:28099">
+                <div className="content-stretch flex items-center py-[var(--padding\/04pt-\(xss\),4px)] relative shrink-0 w-full" data-node-id="6028:28101">
+                  <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['YS_Geo:Medium'] font-medium h-full justify-center leading-[0] min-w-px relative text-[24px] text-black tracking-[0.24px]">
+                    <p className="leading-[28px]">Местный вайб</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col items-center justify-center px-[6px] py-[4px] relative rounded-[var(--radius\/12px-·-300,12px)] shrink-0 size-[40px]" data-node-id="6028:28104" data-name="Weather v2">
+              <div className="flex-[1_0_0] min-h-px relative w-[26px]" data-node-id="6028:28105">
+                <div className="absolute left-[5px] size-[16px] top-0" data-node-id="6028:28106" data-name="Weather for white theme">
+                  <div className="absolute inset-[10.42%]" data-node-id="I6028:28106;7864:52679;232:26646;212:24070" data-name="sun">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSun} />
+                  </div>
+                </div>
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-black text-center w-[32px]" data-node-id="6028:28107">
+                <p className="leading-[16px]">+25°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Feed() {
+  return (
+    <div className="border border-[rgba(0,0,0,0.1)] border-solid content-stretch flex flex-col items-start relative rounded-[48px] size-full" data-node-id="6023:19455" data-name="Feed">
+      <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[48px]">
+        <div className="absolute bg-[var(--bg\/additional,#f4f4f4)] inset-0 rounded-[48px]" />
+        <img alt="" className="absolute max-w-none object-cover rounded-[48px] size-full" src={imgFeed} />
+      </div>
+      <div className="absolute bg-[rgba(0,0,0,0.4)] inset-[-0.5px_0_687.5px_0] rounded-[48px]" data-node-id="6023:19456" data-name="Overlay" />
+      <div className="h-[50px] relative shrink-0 w-[375px]" data-node-id="6023:19457" data-name="Status Bar">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Text:Semibold'] h-[20px] leading-[22px] left-[56px] not-italic text-[17px] text-center text-white top-[19px] tracking-[-0.408px] w-[54px]" data-node-id="I6023:19457;30590:32667" style={{ fontFeatureSettings: '"case" 1' }}>
+          9:41
+        </p>
+        <div className="-translate-x-1/2 absolute h-[13px] left-[calc(50%+131.7px)] top-[23px] w-[74.401px]" data-node-id="I6023:19457;30590:32668" data-name="signs">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSigns} />
+        </div>
+      </div>
+      <div className="absolute content-stretch flex gap-[4px] items-center justify-center left-0 pb-[var(--padding\/08pt-\(s\),8px)] pt-[var(--padding\/00pt-\(null\),0px)] px-[24px] top-[50px] w-[375px]" data-node-id="6023:19458" data-name="labelFrame">
+        <div className="relative shrink-0 size-[16px]" data-node-id="6023:19459" data-name="My geo">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMyGeo} />
+        </div>
+        <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--bw\/white,white)] whitespace-nowrap" data-node-id="6023:19461">
+          <p className="leading-[16px]">Санкт-Петербург</p>
+        </div>
+      </div>
+      <div className="absolute bottom-[741px] h-[21px] left-0 opacity-0 right-0" data-node-id="6023:19462" data-name="Home Indicator">
+        <div className="-translate-x-1/2 absolute bg-white bottom-[8px] h-[5px] left-1/2 rounded-[100px] w-[135px]" data-node-id="I6023:19462;10857:2143" data-name="bar" />
+      </div>
+      <div className="absolute content-stretch flex items-start left-0 top-[74px]" data-node-id="6028:25948" data-name="Shutter">
+        <div className="bg-[var(--bg\/primary,white)] border border-[rgba(0,0,0,0.1)] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[32px] shrink-0 w-[375px]" data-node-id="6028:25949" data-name="Shutter">
+          <HeaderNew className="bg-[var(--bg\/surface,white)] content-stretch flex flex-col items-start relative shrink-0 w-[375px]" />
+          <div className="bg-[var(--bg\/surface,white)] content-stretch flex flex-col items-start overflow-clip pb-[var(--padding\/08pt-\(s\),8px)] relative shrink-0 w-full" data-node-id="6028:25983" data-name="disco_section">
+            <div className="content-stretch flex flex-col items-start pb-[8px] relative shrink-0 w-[375px]" data-node-id="6028:25984" data-name="Slice">
+              <div className="content-stretch flex gap-[8px] items-center px-[16px] relative shrink-0 w-[514px]" data-node-id="6028:25985" data-name="Slice">
+                <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[422px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[290px]" data-node-id="6028:25986" data-name="Google tile">
+                  <div className="h-[244px] relative rounded-[24px] shrink-0 w-full" data-node-id="I6028:25986;6023:19369" data-name="Picture">
+                    <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+                      <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgPicture} />
+                      <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgPicture1} />
+                      <div className="absolute inset-0 rounded-[24px]" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 24%), linear-gradient(180deg, rgba(0, 0, 0, 0) 71.65%, rgba(0, 0, 0, 0.32) 100%)" }} />
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:25986;6023:19370" data-name="Contens">
+                    <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:25986;6023:19371" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      <p className="leading-[18px]">Кофедей</p>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:25986;6023:19372" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:25986;6023:19373" data-name="Meta">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:25986;6023:19374" data-name="Rating, reviews">
+                          <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:25986;6023:19375" data-name="1 slot">
+                            <div className="relative shrink-0 size-[12px]" data-node-id="I6028:25986;6023:19375;673:16619" data-name="14 / rubrics_restaurants_14">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                            </div>
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:25986;6023:19375;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              5,0
+                            </p>
+                          </div>
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19376" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19377" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19378" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                (12 013)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:25986;6023:19382" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19383" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25986;6023:19384" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19384;685:12798">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19384;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              от 2500 ₽
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:25986;6023:19385" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19386" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25986;6023:19387" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25986;6023:19387;685:12798">
+                            <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:25986;6023:19387;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Кофейня
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:25986;6023:19388" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:25986;6023:19389" data-name="Meta">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19390" data-name="Rating, reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19391" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19392" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/success,#3bb300)] whitespace-nowrap" data-node-id="I6028:25986;6023:19393" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                Открыто
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:25986;6023:19397" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19398" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25986;6023:19399" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25986;6023:19400">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25986;6023:19401" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Закроется в 17:00
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:25986;6023:19402" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      Вкусная выпечка и ароматный кофе в центре города
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[422px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[290px]" data-node-id="6028:25987" data-name="Google tile">
+                  <div className="h-[244px] relative rounded-[24px] shrink-0 w-full" data-node-id="I6028:25987;6023:19369" data-name="Picture">
+                    <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+                      <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgPicture2} />
+                      <div className="absolute inset-0 rounded-[24px]" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 24%), linear-gradient(180deg, rgba(0, 0, 0, 0) 71.65%, rgba(0, 0, 0, 0.32) 100%)" }} />
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:25987;6023:19370" data-name="Contens">
+                    <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:25987;6023:19371" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      <p className="leading-[18px]">Tagliatella Caffé</p>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:25987;6023:19372" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:25987;6023:19373" data-name="Meta">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:25987;6023:19374" data-name="Rating, reviews">
+                          <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:25987;6023:19375" data-name="1 slot">
+                            <div className="relative shrink-0 size-[12px]" data-node-id="I6028:25987;6023:19375;673:16619" data-name="14 / rubrics_restaurants_14">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                            </div>
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:25987;6023:19375;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              5,0
+                            </p>
+                          </div>
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19376" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19377" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19378" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                (12 013)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:25987;6023:19382" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19383" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25987;6023:19384" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19384;685:12798">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19384;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              от 2500 ₽
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:25987;6023:19385" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19386" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25987;6023:19387" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25987;6023:19387;685:12798">
+                            <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:25987;6023:19387;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Ресторан
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:25987;6023:19388" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:25987;6023:19389" data-name="Meta">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19390" data-name="Rating, reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19391" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19392" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/success,#3bb300)] whitespace-nowrap" data-node-id="I6028:25987;6023:19393" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                Открыто
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:25987;6023:19397" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19398" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:25987;6023:19399" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:25987;6023:19400">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:25987;6023:19401" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Закроется в 17:00
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:25987;6023:19402" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      Знаменитый ресторан северной кухни в центре Москвы
+                    </p>
+                  </div>
+                </div>
+                <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[422px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[290px]" size="L" />
+                <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[422px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[290px]" size="L" />
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[20px] px-[var(--padding\/16pt-\(l\),16px)] relative shrink-0 w-full" data-node-id="6028:25990">
+                <div className="bg-[var(--button\/secondary,#f6f6f6)] content-stretch flex gap-[var(--padding\/00pt-\(null\),0px)] items-center justify-center overflow-clip p-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/32pt-\(xxxl\),32px)] shrink-0 w-full" data-node-id="6028:25991" data-name="Button">
+                  <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary-variant,#4d4d4d)] text-center whitespace-nowrap" data-node-id="I6028:25991;12292:5647">
+                    <p className="leading-[16px]">Всё популярное</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--bg\/surface,white)] content-stretch flex flex-col items-start overflow-clip pb-[var(--padding\/08pt-\(s\),8px)] relative shrink-0 w-[375px]" data-node-id="6028:25992" data-name="disco_section">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[375px]" data-node-id="6028:25993" data-name="Slice">
+              <div className="bg-[var(--bg\/primary,white)] content-stretch flex items-center justify-center px-[var(--padding\/00pt-\(null\),0px)] py-[12px] relative shrink-0 w-[375px]" data-node-id="6028:25994" data-name="list_item">
+                <div className="content-stretch flex flex-[1_0_0] items-center min-w-px pl-[20px] pr-[16px] py-[var(--padding\/08pt-\(s\),8px)] relative" data-node-id="6028:25995" data-name="title">
+                  <div className="content-stretch flex flex-[1_0_0] items-center min-w-px py-[var(--padding\/00pt-\(null\),0px)] relative" data-node-id="6028:25996" data-name="title">
+                    <div className="content-stretch flex items-center relative shrink-0 w-[249px]" data-node-id="6028:25997">
+                      <div className="flex flex-row items-center self-stretch" data-node-id="6028:25998">
+                        <div className="content-stretch flex h-full items-center p-[var(--padding\/00pt-\(null\),0px)] relative shrink-0" data-name="🫁 Body">
+                          <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family\/alt,'YS_Geo:Medium')] font-medium justify-center leading-[0] overflow-hidden relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/150,20px)] text-ellipsis tracking-[0.2px] whitespace-nowrap" data-node-id="6028:25999" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            <p className="leading-[var(--line-height\/150,24px)] overflow-hidden text-[20px] text-ellipsis">Погулять</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] items-center px-[16px] relative shrink-0" data-node-id="6028:26000" data-name="Slice">
+                <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" data-node-id="6028:26001" data-name="Google tile">
+                  <div className="h-[244px] relative rounded-[24px] shrink-0 w-full" data-node-id="I6028:26001;6023:19353" data-name="Picture">
+                    <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+                      <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgPicture3} />
+                      <div className="absolute inset-0 rounded-[24px]" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 24%), linear-gradient(180deg, rgba(0, 0, 0, 0) 71.65%, rgba(0, 0, 0, 0.32) 100%)" }} />
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:26001;6023:19313" data-name="Contens">
+                    <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:26001;6023:19314" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      <p className="leading-[18px]">Маяк Толбухин</p>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26001;6023:19315" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26001;6023:19316" data-name="Meta">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:26001;6023:19317" data-name="Rating, reviews">
+                          <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:26001;6023:19318" data-name="1 slot">
+                            <div className="relative shrink-0 size-[12px]" data-node-id="I6028:26001;6023:19318;673:16619" data-name="14 / rubrics_restaurants_14">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                            </div>
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:26001;6023:19318;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              5,0
+                            </p>
+                          </div>
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19319" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19320" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26001;6023:19321" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                (12 013)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:26001;6023:19328" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26001;6023:19329" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative" data-node-id="I6028:26001;6023:19330" data-name="2 slot">
+                          <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative" data-node-id="I6028:26001;6023:19330;685:12798">
+                            <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:26001;6023:19330;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Достопримечательность
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26001;6023:19331" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26001;6023:19332" data-name="Meta">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19333" data-name="Rating, reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19334" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19335" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/alert,#f43)] whitespace-nowrap" data-node-id="I6028:26001;6023:19336" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                Закрыто
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26001;6023:19340" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26001;6023:19341" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26001;6023:19361" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26001;6023:19362">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26001;6023:19363" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Откроется в 10:00
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:26001;6023:19343" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      Один из старейших российских маяков. Расположен в Кронштадте Санкт-Петербурга
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" data-node-id="6028:26002" data-name="Google tile">
+                  <div className="h-[244px] relative rounded-[24px] shrink-0 w-full" data-node-id="I6028:26002;6023:19353" data-name="Picture">
+                    <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+                      <img alt="" className="absolute max-w-none object-cover rounded-[24px] size-full" src={imgPicture4} />
+                      <div className="absolute inset-0 rounded-[24px]" style={{ backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0) 24%), linear-gradient(180deg, rgba(0, 0, 0, 0) 71.65%, rgba(0, 0, 0, 0.32) 100%)" }} />
+                    </div>
+                  </div>
+                  <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:26002;6023:19313" data-name="Contens">
+                    <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:26002;6023:19314" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      <p className="leading-[18px]">Крейсер Аврора</p>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26002;6023:19315" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26002;6023:19316" data-name="Meta">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:26002;6023:19317" data-name="Rating, reviews">
+                          <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:26002;6023:19318" data-name="1 slot">
+                            <div className="relative shrink-0 size-[12px]" data-node-id="I6028:26002;6023:19318;673:16619" data-name="14 / rubrics_restaurants_14">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                            </div>
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:26002;6023:19318;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              5,0
+                            </p>
+                          </div>
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19319" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19320" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19321" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                (12 013)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26002;6023:19325" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19326" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26002;6023:19327" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19327;685:12798">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19327;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              от 2500 ₽
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:26002;6023:19328" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19329" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26002;6023:19330" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26002;6023:19330;685:12798">
+                            <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:26002;6023:19330;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Ресторан
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26002;6023:19331" data-name="Meta">
+                      <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26002;6023:19332" data-name="Meta">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19333" data-name="Rating, reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19334" data-name="Reviews">
+                            <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19335" data-name="Rating, reviews">
+                              <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/alert,#f43)] whitespace-nowrap" data-node-id="I6028:26002;6023:19336" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                                Закрыто
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26002;6023:19340" data-name="2nd slot">
+                        <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19341" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ·
+                        </p>
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26002;6023:19361" data-name="2 slot">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26002;6023:19362">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26002;6023:19363" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Откроется в 8:00
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:26002;6023:19343" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                      Самый известный кобаль русского флота, Участник важнейших событий XX века
+                    </p>
+                  </div>
+                </div>
+                <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" />
+                <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" />
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[20px] px-[var(--padding\/16pt-\(l\),16px)] relative shrink-0 w-full" data-node-id="6028:26005">
+                <div className="bg-[var(--button\/secondary,#f6f6f6)] content-stretch flex gap-[var(--padding\/00pt-\(null\),0px)] items-center justify-center overflow-clip p-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/32pt-\(xxxl\),32px)] shrink-0 w-full" data-node-id="6028:26006" data-name="Button">
+                  <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary-variant,#4d4d4d)] text-center whitespace-nowrap" data-node-id="I6028:26006;12292:5647">
+                    <p className="leading-[16px]">Показать ещё</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start pb-[8px] relative shrink-0 w-[375px]" data-node-id="6028:26007" data-name="Slice">
+            <div className="bg-[var(--bg\/primary,white)] content-stretch flex items-center justify-center px-[var(--padding\/00pt-\(null\),0px)] py-[12px] relative shrink-0 w-[375px]" data-node-id="6028:26008" data-name="list_item">
+              <div className="content-stretch flex flex-[1_0_0] items-center min-w-px pl-[20px] pr-[16px] py-[var(--padding\/08pt-\(s\),8px)] relative" data-node-id="6028:26009" data-name="title">
+                <div className="content-stretch flex flex-[1_0_0] items-center min-w-px py-[var(--padding\/00pt-\(null\),0px)] relative" data-node-id="6028:26010" data-name="title">
+                  <div className="content-stretch flex items-center relative shrink-0 w-[249px]" data-node-id="6028:26011">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="6028:26012">
+                      <div className="content-stretch flex h-full items-center p-[var(--padding\/00pt-\(null\),0px)] relative shrink-0" data-name="🫁 Body">
+                        <div className="[word-break:break-word] flex flex-col font-[family-name:var(--font-family\/alt,'YS_Geo:Medium')] font-medium justify-center leading-[0] overflow-hidden relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/150,20px)] text-ellipsis tracking-[0.2px] whitespace-nowrap" data-node-id="6028:26013" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          <p className="leading-[var(--line-height\/150,24px)] overflow-hidden text-[20px] text-ellipsis">Развлечься</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center px-[16px] relative shrink-0 w-[514px]" data-node-id="6028:26014" data-name="Slice">
+              <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" data-node-id="6028:26015" data-name="Google tile">
+                <div className="h-[244px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-full" data-node-id="I6028:26015;6023:19353" data-name="Picture">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--radius\/20px-·-500,20px)] size-full" src={imgPicture5} />
+                </div>
+                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:26015;6023:19313" data-name="Contens">
+                  <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:26015;6023:19314" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    <p className="leading-[18px]">Radisson Соня</p>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26015;6023:19315" data-name="Meta">
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26015;6023:19316" data-name="Meta">
+                      <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:26015;6023:19317" data-name="Rating, reviews">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:26015;6023:19318" data-name="1 slot">
+                          <div className="relative shrink-0 size-[12px]" data-node-id="I6028:26015;6023:19318;673:16619" data-name="14 / rubrics_restaurants_14">
+                            <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                          </div>
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:26015;6023:19318;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            5,0
+                          </p>
+                        </div>
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19319" data-name="Reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19320" data-name="Rating, reviews">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19321" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              (12 013)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26015;6023:19325" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19326" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26015;6023:19327" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19327;685:12798">
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19327;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            от 2500 ₽
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:26015;6023:19328" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19329" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26015;6023:19330" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26015;6023:19330;685:12798">
+                          <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:26015;6023:19330;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            Ресторан
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26015;6023:19331" data-name="Meta">
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26015;6023:19332" data-name="Meta">
+                      <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19333" data-name="Rating, reviews">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19334" data-name="Reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19335" data-name="Rating, reviews">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/alert,#f43)] whitespace-nowrap" data-node-id="I6028:26015;6023:19336" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Закрыто
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26015;6023:19340" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19341" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26015;6023:19361" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26015;6023:19362">
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26015;6023:19363" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            Откроется в 8:00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:26015;6023:19343" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    Знаменитый ресторан северной кухни в центре Москвы
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" data-node-id="6028:26016" data-name="Google tile">
+                <div className="h-[244px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-full" data-node-id="I6028:26016;6023:19353" data-name="Picture">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[var(--radius\/20px-·-500,20px)] size-full" src={imgPicture6} />
+                </div>
+                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-h-px px-[12px] relative w-full" data-node-id="I6028:26016;6023:19313" data-name="Contens">
+                  <div className="[word-break:break-word] flex flex-col font-['YS_Geo:Medium'] font-medium justify-center leading-[0] relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font-size\/b1,16px)] tracking-[0.16px] whitespace-nowrap" data-node-id="I6028:26016;6023:19314" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    <p className="leading-[18px]">Друзья на Фонтанке</p>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26016;6023:19315" data-name="Meta">
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26016;6023:19316" data-name="Meta">
+                      <div className="content-stretch flex gap-[2px] items-center relative shrink-0" data-node-id="I6028:26016;6023:19317" data-name="Rating, reviews">
+                        <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-[32px]" data-node-id="I6028:26016;6023:19318" data-name="1 slot">
+                          <div className="relative shrink-0 size-[12px]" data-node-id="I6028:26016;6023:19318;673:16619" data-name="14 / rubrics_restaurants_14">
+                            <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14RubricsLandmark15} />
+                          </div>
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/primary,black)] whitespace-nowrap" data-node-id="I6028:26016;6023:19318;673:16620" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            5,0
+                          </p>
+                        </div>
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19319" data-name="Reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19320" data-name="Rating, reviews">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19321" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              (12 013)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26016;6023:19325" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19326" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26016;6023:19327" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19327;685:12798">
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19327;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            от 2500 ₽
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I6028:26016;6023:19328" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19329" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26016;6023:19330" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26016;6023:19330;685:12798">
+                          <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] min-w-px not-italic relative text-[12px] text-[color:var(--text\/secondary,#878787)]" data-node-id="I6028:26016;6023:19330;685:12799" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            Ресторан
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-start relative shrink-0 w-full" data-node-id="I6028:26016;6023:19331" data-name="Meta">
+                    <div className="content-stretch flex gap-[4px] items-start relative shrink-0" data-node-id="I6028:26016;6023:19332" data-name="Meta">
+                      <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19333" data-name="Rating, reviews">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19334" data-name="Reviews">
+                          <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19335" data-name="Rating, reviews">
+                            <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/special\/alert,#f43)] whitespace-nowrap" data-node-id="I6028:26016;6023:19336" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                              Закрыто
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I6028:26016;6023:19340" data-name="2nd slot">
+                      <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19341" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                        ·
+                      </p>
+                      <div className="content-stretch flex items-center relative shrink-0 w-[55px]" data-node-id="I6028:26016;6023:19361" data-name="2 slot">
+                        <div className="content-stretch flex items-center relative shrink-0" data-node-id="I6028:26016;6023:19362">
+                          <p className="[word-break:break-word] font-[family-name:var(--fontfamily,'YS_Text:Medium')] leading-[14px] not-italic relative shrink-0 text-[12px] text-[color:var(--text\/secondary,#878787)] whitespace-nowrap" data-node-id="I6028:26016;6023:19363" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                            Откроется в 8:00
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--fontfamily,'YS_Text:Regular')] leading-[16px] min-h-px not-italic overflow-hidden relative text-[14px] text-[color:var(--text\/primary,black)] text-ellipsis w-[202px]" data-node-id="I6028:26016;6023:19343" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                    Знаменитый ресторан северной кухни в центре Москвы
+                  </p>
+                </div>
+              </div>
+              <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" />
+              <GoogleTile className="bg-[var(--bg\/additional,#f4f4f4)] content-stretch flex flex-col gap-[12px] h-[427px] items-start pb-[16px] relative rounded-[var(--radius\/20px-·-500,20px)] shrink-0 w-[245px]" />
+            </div>
+            <div className="content-stretch flex flex-col items-start px-[var(--padding\/16pt-\(l\),16px)] py-[20px] relative shrink-0 w-full" data-node-id="6028:26019">
+              <div className="bg-[var(--button\/secondary,#f6f6f6)] content-stretch flex gap-[var(--padding\/00pt-\(null\),0px)] items-center justify-center overflow-clip p-[var(--padding\/12pt-\(m\),12px)] relative rounded-[var(--corner-radius\/32pt-\(xxxl\),32px)] shrink-0 w-full" data-node-id="6028:26020" data-name="Button">
+                <div className="[word-break:break-word] flex flex-col font-[family-name:var(--fontfamily,'YS_Text:Medium')] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary-variant,#4d4d4d)] text-center whitespace-nowrap" data-node-id="I6028:26020;12292:5647">
+                  <p className="leading-[16px]">Показать все отели</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Size 14 - Medium: Font(family: "fontFamily", style: Medium, size: 14, weight: 500, lineHeight: 16, letterSpacing: 0), Text [day]/Primary: #000000, Morda_single/Moon, sun, lighning: .
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## platform=ios & android
+**Node ID:** 6007:391
+
+Оверлей для светлой и тёмной темы
+
+## model=13 mini, dark?=true
+**Node ID:** 6007:393
+
+375x812
+
+## location_filled_16
+**Node ID:** 6007:539
+
+noexport Если нужно выгружать разработке, уберите \_noexport из имени в мастер-компоненте
+
+## Button
+**Node ID:** 6007:409
+
+**Documentation:**
+- [https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralButton/GeneralButtonViewModelFactory.swift](https://a.yandex-team.ru/arc_vcs/mobile/geo/maps/maps/ios/libs/YandexMapsUIComponents/Sources/CommonViewWrappers/ConfigurableItems/GeneralButton/GeneralButtonViewModelFactory.swift)
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.
