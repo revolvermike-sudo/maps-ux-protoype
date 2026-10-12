@@ -7,7 +7,7 @@
   <title>Яндекс Карты — Тест 1</title>
   <link rel="preload" href="public/assets/figma/ys-text-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="public/assets/figma/ys-text-medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=discovery-motion-1">
+  <link rel="stylesheet" href="styles.css?v=search-layer-1">
 </head>
 <body>
   <main class="prototype-shell">
@@ -19,6 +19,11 @@
       <section class="phone" data-test="1" aria-label="Прототип ленты рекомендаций">
         <section id="map-screen" class="screen screen--map" aria-label="Главный экран карты">
           <img src="public/assets/map-screen.png" alt="Карта центра Санкт-Петербурга" class="map-image">
+          <div class="map-search google-only" data-figma-node="6123:14084">
+            <button class="map-search-profile" type="button" aria-label="Профиль"><img src="public/assets/figma/bb84c.svg" alt=""><img class="map-search-avatar" src="public/assets/figma/f3ac9.png" alt=""></button>
+            <div class="map-search-input"><button id="google-map-search" type="button" aria-label="Поиск мест и адресов">Поиск мест и адресов</button><button id="map-search-voice" type="button" aria-label="Голосовой поиск"><img src="public/assets/figma/cd073.svg" alt=""></button></div>
+            <button id="map-search-saved" class="map-search-bookmarks" type="button" aria-label="Сохранённые места" aria-pressed="false"><img src="public/assets/figma/3a8f8.svg" alt=""></button>
+          </div>
           <div class="home-sheet" data-figma-node="6007:15679">
             <button class="drag-control" id="open-feed" type="button" aria-label="Открыть рекомендации"><img src="public/assets/figma/52b90.svg" alt=""></button>
             <div class="google-header google-only" data-figma-node="6028:28121"><button class="google-heading" data-google-open type="button">Местный вайб</button><div class="google-weather" aria-label="Солнечно, плюс 25 градусов"><img src="public/assets/figma/97b58.svg" alt=""><span>+25°</span></div></div>
@@ -76,11 +81,25 @@
             <div class="discovery-scroll" tabindex="0" aria-label="Места категории"><div id="discovery-grid" class="tile-grid" aria-live="polite"></div></div>
           </section>
         </section>
+        <section id="search-screen" class="screen screen--search is-hidden" aria-label="Поиск мест и адресов" aria-hidden="true" data-figma-node="6132:16497">
+          <div class="null-search-overlay"></div>
+          <div class="null-search-status" aria-hidden="true"><span>9:41</span><img src="public/assets/figma/eba05.svg" alt=""></div>
+          <div class="null-search-sheet">
+            <header class="null-search-header">
+              <button class="null-search-grabber" id="search-dragger" type="button" aria-label="Свернуть поиск"><img src="public/assets/figma/8ccfd.svg" alt="" draggable="false"></button>
+              <img class="null-search-icon" src="public/assets/figma/26127.svg" alt="">
+              <div class="null-search-field"><span>Поиск мест и адресов</span><button data-search-unavailable type="button" aria-label="Голосовой поиск"><img src="public/assets/figma/f6eec.svg" alt=""></button></div>
+              <button id="close-search" type="button" aria-label="Закрыть поиск"><img src="public/assets/figma/7766e.svg" alt=""></button>
+            </header>
+            <div class="null-search-tabs" role="tablist" aria-label="Разделы поиска"><button type="button" role="tab" aria-selected="true" data-search-tab="categories">Категории</button><button type="button" role="tab" aria-selected="false" data-search-tab="history">История</button></div>
+            <div class="null-search-scroll"><div id="null-search-categories" role="tabpanel" aria-label="Категории"></div><div id="null-search-history" role="tabpanel" aria-label="История" hidden><p>История поиска пуста</p></div></div>
+          </div>
+        </section>
         <section id="place-screen" class="screen screen--place is-hidden" aria-label="Карточка места" aria-hidden="true"></section>
         <div id="toast" class="toast" role="status" hidden></div>
       </section>
     </div>
   </main>
-  <script type="module" src="app.js?v=fun-section-1"></script>
+  <script type="module" src="app.js?v=search-layer-1"></script>
 </body>
 </html>

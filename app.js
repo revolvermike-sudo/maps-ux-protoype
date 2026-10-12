@@ -44,6 +44,95 @@ const feedScroll = document.querySelector('#feed-scroll');
 const grid = document.querySelector('#tile-grid');
 const intents = document.querySelector('#intents');
 const search = document.querySelector('#search');
+const mapSearch = document.querySelector('#google-map-search');
+screens.search = document.querySelector('#search-screen');
+const searchRubrics = [
+  ['Спросить AI','47188.svg'], ['Продукты','a5a64.svg'], ['Гостиницы','57846.svg'], ['Аптеки','075e4.svg'],
+  ['Салоны красоты','34590.svg'], ['Еда навынос','5c5d6.svg'], ['АЗС','99b22.svg'], ['Больницы','075e4.svg'],
+  ['Ново-стройки','86a79.png',true], ['Вкусно — и точка','5b490.png',true], ['Додо Пицца','88e2a.png',true], ['Бургер Кинг','76bbf.png',true],
+  ['ТЦ','5c5d6.svg'], ['Банкоматы','d9b43.svg'], ['Кинотеатры','13371.svg'], ['Доставка еды','5c5d6.svg'],
+  ['Автомойки','50eda.svg'], ['Автосервисы','07687.svg'], ['Бани и сауны','c8c7f.svg'], ['Фитнес','bcc8a.svg']
+];
+document.querySelector('#null-search-categories').innerHTML = searchRubrics.map(([title,file,ad]) =>
+  `<button type="button" class="null-search-category${ad?' is-ad':''}" data-search-unavailable><span class="null-search-circle"><img src="${asset(file)}" alt=""></span><span class="null-search-label">${esc(title)}</span>${ad?'<small>Реклама</small>':''}</button>`).join('');
+function openSearch() {
+  searchClosing = false;
+  showScreen('search');
+  document.querySelector('[data-search-tab="categories"]').click();
+  document.querySelector('.null-search-scroll').scrollTop = 0;
+  const sheet = document.querySelector('.null-search-sheet');
+  sheet.style.removeProperty('transform');
+  sheet.classList.remove('is-ready');
+  sheet.getAnimations().forEach(animation => animation.cancel());
+  const duration = reduceMotion() ? 0 : 520;
+  screens.search.animate([{opacity:0},{opacity:1}], {duration:reduceMotion()?0:280,easing:'ease-out'});
+  const motion = sheet.animate([{transform:'translateY(100%)'},{transform:'translateY(0)'}], {duration,easing:'cubic-bezier(.22,1,.36,1)'});
+  motion.finished.then(() => { if (activeScreen === 'search') sheet.classList.add('is-ready'); }).catch(() => {});
+}
+const searchSheet = document.querySelector('.null-search-sheet');
+const searchDragger = document.querySelector('#search-dragger');
+let searchClosing = false;
+let searchGesture = null;
+let suppressSearchTap = false;
+async function closeSearch() {
+  if (activeScreen !== 'search' || searchClosing) return;
+  searchClosing = true;
+  const from = getComputedStyle(searchSheet).transform;
+  searchSheet.getAnimations().forEach(animation => animation.cancel());
+  screens.map.classList.remove('is-hidden');
+  const timing = {duration:reduceMotion()?0:440,easing:'cubic-bezier(.22,1,.36,1)'};
+  const motions = [
+    searchSheet.animate([{transform:from},{transform:'translateY(100%)'}],timing),
+    screens.search.animate([{opacity:1},{opacity:0}],timing)
+  ];
+  await Promise.all(motions.map(motion=>motion.finished.catch(()=>{})));
+  if (activeScreen === 'search') showScreen('map');
+  searchSheet.style.removeProperty('transform');
+  searchClosing = false;
+}
+searchDragger.addEventListener('pointerdown', event => {
+  if (event.button !== 0 || searchClosing || !searchSheet.classList.contains('is-ready')) return;
+  searchGesture = {y:event.clientY,scale:document.querySelector('.phone').getBoundingClientRect().height/document.querySelector('.phone').clientHeight,delta:0,moved:false};
+  searchDragger.setPointerCapture(event.pointerId);
+});
+searchDragger.addEventListener('pointermove', event => {
+  if (!searchGesture) return;
+  searchGesture.delta = Math.max(0,(event.clientY-searchGesture.y)/searchGesture.scale);
+  if (Math.abs(event.clientY-searchGesture.y)>4) searchGesture.moved = true;
+  if (searchGesture.moved) searchSheet.style.transform = `translateY(${searchGesture.delta}px)`;
+});
+function finishSearchDrag(event) {
+  if (!searchGesture) return;
+  const gesture = searchGesture;
+  searchGesture = null;
+  if (!gesture.moved) return;
+  suppressSearchTap = true;
+  setTimeout(()=>{suppressSearchTap=false;},0);
+  if (event.type !== 'pointercancel' && gesture.delta >= 60) closeSearch();
+  else {
+    const from = getComputedStyle(searchSheet).transform;
+    searchSheet.style.removeProperty('transform');
+    searchSheet.animate([{transform:from},{transform:'translateY(0)'}],{duration:reduceMotion()?0:300,easing:'cubic-bezier(.22,1,.36,1)'});
+  }
+}
+searchDragger.addEventListener('pointerup',finishSearchDrag);
+searchDragger.addEventListener('pointercancel',finishSearchDrag);
+searchDragger.addEventListener('click', () => { if (!suppressSearchTap) closeSearch(); });
+mapSearch.addEventListener('click', openSearch);
+document.querySelector('#close-search').addEventListener('click', closeSearch);
+screens.search.addEventListener('click', event => {
+  const tab = event.target.closest('[data-search-tab]');
+  if (tab) {
+    const categoriesVisible = tab.dataset.searchTab === 'categories';
+    document.querySelector('#null-search-categories').hidden = !categoriesVisible;
+    document.querySelector('#null-search-history').hidden = categoriesVisible;
+    screens.search.querySelectorAll('[data-search-tab]').forEach(button => button.setAttribute('aria-selected', String(button === tab)));
+  }
+  if (event.target.closest('[data-search-unavailable]')) notify('Этот раздел недоступен в прототипе');
+});
+document.querySelector('#map-search-saved').addEventListener('click', () => { savedOnly=true; category='all'; renderFeed(); openFeed(); });
+document.querySelector('#map-search-voice').addEventListener('click', () => notify('Введите запрос: голосовой поиск в прототипе недоступен'));
+document.querySelector('.map-search-profile').addEventListener('click', () => notify('Профиль недоступен в прототипе'));
 const savedButton = document.querySelector('#toggle-saved');
 const header = document.querySelector('.feed-header');
 const homePreview = document.querySelector('#home-preview');
@@ -155,7 +244,7 @@ function toggleSaved(id) {
 function renderDiscoveryPlaces() {
   const query = discoverySearch.value.trim().toLocaleLowerCase('ru');
   const items = discoveryPlaces.filter(place => !query || [place.name,place.category,place.address].some(value => value.toLocaleLowerCase('ru').includes(query)));
-  discoveryGrid.innerHTML = items.length ? items.map(place => tile(place)).join('') : '<p class="empty-state">Места не найдены</p>';
+  discoveryGrid.innerHTML = items.length ? items.map(place => activeTest === '2' ? googleTile(place, googleHelpers, 'L') : tile(place)).join('') : '<p class="empty-state">Места не найдены</p>';
 }
 function expandDiscovery(expanded) {
   discoveryExpanded = expanded;
@@ -370,6 +459,7 @@ function prepareSheet(fromOpen) {
   screens.map.classList.remove('is-hidden');
   screens.feed.classList.remove('is-hidden');
   screens.feed.style.pointerEvents = 'none';
+  document.querySelector('.map-search').inert = true;
   homeSheet.style.opacity = '0';
   sheetMotion = {distance, offset: fromOpen ? 0 : distance};
   paintSheet(sheetMotion.offset);
@@ -394,6 +484,7 @@ async function settleSheet(open) {
   sheetBackdrop.forEach(node=>node.style.removeProperty('opacity'));
   homeSheet.style.removeProperty('opacity');
   screens.feed.style.removeProperty('pointer-events');
+  document.querySelector('.map-search').inert = false;
   sheetMotion = null;
   sheetAnimating = false;
   if (open && activeTest === '1') centerIntent(category);
@@ -410,7 +501,7 @@ function goMap() {
 }
 
 document.querySelector('#open-feed').addEventListener('click',openFeed);
-document.querySelector('[data-open-feed]').addEventListener('click',openFeed);
+document.querySelector('[data-open-feed]').addEventListener('click',openSearch);
 document.querySelector('#collapse-feed').addEventListener('click',goMap);
 document.querySelector('#back-to-map').addEventListener('click',()=>openDiscovery());
 function selectTest(test, updateUrl=true) {
@@ -498,6 +589,7 @@ screens.place.addEventListener('click',async event=>{
 window.addEventListener('popstate',()=>{if(activeScreen==='place')showScreen(returnScreen);});
 window.addEventListener('keydown',event=>{
   if(event.key!=='Escape')return;
+  if(activeScreen==='search'){closeSearch();return;}
   const viewer=document.querySelector('.photo-viewer');
   if(viewer){viewer.remove();screens.place.inert=false;return;}
   if(activeScreen==='place')closePlace();else if(activeScreen==='feed')goMap();else if(activeScreen==='discovery'){if(discoveryExpanded)expandDiscovery(false);else closeDiscovery();}

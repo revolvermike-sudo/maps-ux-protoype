@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24 / rubrics_atm_24">
+<g id="Shape">
+<path d="M16 11V14H17V11H16Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+<path d="M20 11V14H21V11H20Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C3.44772 4 3 4.44772 3 5V16C3 16.5523 3.44772 17 4 17H23C23.5523 17 24 16.5523 24 16V5C24 4.44772 23.5523 4 23 4H4ZM7.5 11C8.88071 11 10 9.88071 10 8.5C10 7.11929 8.88071 6 7.5 6C6.11929 6 5 7.11929 5 8.5C5 9.88071 6.11929 11 7.5 11ZM17 10H16C15.4477 10 15 10.4477 15 11V14C15 14.5523 15.4477 15 16 15H17C17.5523 15 18 14.5523 18 14V11C18 10.4477 17.5523 10 17 10ZM21 10H20C19.4477 10 19 10.4477 19 11V14C19 14.5523 19.4477 15 20 15H21C21.5523 15 22 14.5523 22 14V11C22 10.4477 21.5523 10 21 10ZM14 10H13C13 10 12.9661 11 12 11V12H13V15H14V10Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+<path d="M1 7H2V16.6C2 17.3732 2.6268 18 3.4 18H21V19C21 19.5523 20.5523 20 20 20H1C0.447715 20 0 19.5523 0 19V8C0 7.44772 0.447715 7 1 7Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<g id="Vector">
+<path d="M8 5V5.5H14.4C16.2778 5.5 17.5 6.72223 17.5 8.6V15.5855L19.2764 16.6382C19.3458 16.6729 19.4224 16.691 19.5 16.691C19.7761 16.691 20 16.4671 20 16.191V5C20 3.89543 19.1046 3 18 3H10C8.89543 3 8 3.89543 8 5Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+<path d="M16 9C16 7.89471 15.1046 7 14 7H6C4.89543 7 4 7.89471 4 9V20.4996C4 20.5772 4.01807 20.6538 4.05279 20.7233C4.17628 20.9705 4.47662 21.0706 4.72361 20.9471L10 18.4L15.2764 20.9471C15.3458 20.9818 15.4224 20.9999 15.5 20.9999C15.7761 20.9999 16 20.7759 16 20.4996V9Z" fill="#4D4D4D" style="fill:#4D4D4D;fill:color(display-p3 0.3020 0.3020 0.3020);fill-opacity:1;"/>
+</g>
+</g>
+</svg>
